@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>JesusWalk | About</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Judo Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/modernizr.custom.js"></script>
+<!-- //js -->	
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+</head>
+
+
+<body>
+	<!--navigation-->
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"> <img src="images/JWFlogoSmall2.png"> </a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-center cl-effect-15">
+						<li class="hello"><a href="index.html" data-hover="Home">HOME</a></li>
+						<li><a href="" data-hover="About">ABOUT</a></li>					
+						<li><a href="#team" class="scroll" data-hover="2016">2016</a></li>
+						<li><a href="#services" class="scroll" data-hover="DONATE NOW">DONATE NOW</a></li>
+						<li><a href="#gallery" class="scroll" data-hover="REGISTER">REGISTER</a></li>
+						<li><a href="#news" class="scroll" data-hover="GET INVOLVED">GET INVOLVED</a></li>			
+						<li><a href="#contact" class="scroll" data-hover="Contact">Contact</a></li>
+					</ul>	
+					<div class="clearfix"> </div>
+				</div>
+			</div>	
+		</nav>		
+	</div>	
+			<!-- script-for sticky-nav -->
+			<script>
+			$(document).ready(function() {
+				 var navoffeset=$(".top-nav").offset().top;
+				 $(window).scroll(function(){
+					var scrollpos=$(window).scrollTop(); 
+					if(scrollpos >=navoffeset){
+						$(".top-nav").addClass("fixed");
+					}else{
+						$(".top-nav").removeClass("fixed");
+					}
+				 });
+				 
+			});
+			</script>
+			<!-- /script-for sticky-nav -->
+	<!--navigation-->
+
+<!--baner-->
+	<div class="aboutBaner" id="home">
+		<div class="container text-center">
+			<div class="comingSoon">
+				<h2>COMING SOON</h2>	
+				<h3>CHECK BACK FOR UPDATES</h3>
+			</div>	
+		</div>
+	</div>
+<!--//baner-->
+
+	<!--Contact-->
+	<div class="like">		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h3 class="title1 ">follow us: jesuswalkyouth</h3>
+				<div class="like-info">
+				<div class="col-md-3 like-grids">
+					<a href="https://www.facebook.com/jesuswalkyouth">
+						<img src="images/icon1.png" alt=""/>
+					</a>
+				</div>
+				<div class="col-md-3 like-grids">
+					<a href="https://www.instagram.com/jesuswalkyouth/">
+						<img src="images/icon3.png" alt=""/>
+					</a>
+				</div>
+				<div class="col-md-3 like-grids">
+					<a href="https://twitter.com/jesuswalk">
+						<img src="images/icon5.png" alt=""/>
+					</a>
+				</div>
+				<div class="col-md-3 like-grids">
+					<a href="https://www.youtube.com/channel/UC8ClHBypqvmXQhC8FcMcf_g">
+						<img src="images/icon2.png" alt=""/>
+					</a>
+				</div>			
+				<div class="clearfix"> </div>
+			</div>
+				</div>
+				<div class="col-md-3">
+					<h3 class="title2">contact us</h3>
+				<div class="contact-right">				
+				<form>
+					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+
+				</form>
+			</div>
+				</div>
+			<div class="col-md-1 buttonPosition">
+					<button class="btn" type="submit" ><img src="images/submitButton.png" alt=""/></input>
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!--//Contact-->
+
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p>COPYRIGHT © 2015 JESUSWALKYOUTH.COM</p>
+		</div>
+	</div>
+	<!--//footer-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+
+</html>
