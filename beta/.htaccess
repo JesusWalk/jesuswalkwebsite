@@ -1,0 +1,3 @@
+DirectoryIndex index.html
+SetHandler jakarta-servlet
+SetEnv JK_WORKER_NAME ajp13
