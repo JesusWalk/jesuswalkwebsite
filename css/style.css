@@ -475,6 +475,13 @@ font-size: 3em;
     min-height: 275px;
 }
 
+.register-now-link{
+    background: url(../images/Register.png)no-repeat 0px 0px;
+    background-size: cover;
+    display: block;
+    min-height: 275px;
+}
+
 
 .communityService-link{
     background: url(../images/communityService.png)no-repeat 0px 0px;
