@@ -1158,7 +1158,7 @@ img {
 hr {
   margin-bottom: 20px;
   border: 0;
-  border-top: 40px solid #902939;
+  border-top: 20px solid #902939;
 }
 .sr-only {
   position: absolute;
@@ -1416,9 +1416,8 @@ a.bg-danger:hover {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
-
 ul ul,
 ol ul,
 ul ol,
@@ -1428,13 +1427,6 @@ ol ol {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
-}
-.list-styled {
-  padding-left: 0;
-  width: 80%;
-  font-size: 1.1em;
-  font-family: 'Nunito', sans-serif;
-  
 }
 .list-inline {
   padding-left: 0;

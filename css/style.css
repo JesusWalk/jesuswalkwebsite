@@ -1,12 +1,7 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 body{
 	margin:0;
-	font-family: 'Roboto-Regular';
+	font-family: 'Raleway', sans-serif
+  /*;font-family: 'Roboto-Regular';*/
 }
 @font-face {
     font-family: 'Roboto-Regular';
@@ -29,6 +24,7 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
 	margin:0;
+  font-family: 'Raleway', sans-serif;
 }
 
 body a:hover{
@@ -39,7 +35,7 @@ body a:hover{
 /*--baner--*/
 .baner {
    background:url(../images/Banner.png)no-repeat 0px 0px;
-   background-size:cover;
+   background-siez:cover;
    -webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -54,7 +50,7 @@ body a:hover{
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
-   min-height:610px;
+   min-height:300px;
 }
 
 
@@ -65,7 +61,7 @@ body a:hover{
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
-   min-height:610px;
+   min-height:365px;
 }
 
 .themeBanner {
@@ -75,7 +71,7 @@ body a:hover{
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
-   min-height:610px;
+   min-height:410px;
 }
 
 .donateBanner {
@@ -85,7 +81,7 @@ body a:hover{
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
-   min-height:610px;
+   min-height:410px;
 }
 
 .registerBanner {
@@ -95,7 +91,7 @@ body a:hover{
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
-   min-height:610px;
+   min-height:410px;
 }
 
 
@@ -104,7 +100,7 @@ video#bgvid {
     position: absolute;
     top: 8%;
     left: 50%;
-    min-width: 100%;
+    /*min-width: 100%;*/
     min-height: 100%;
     width: auto;
     height: auto;
@@ -113,14 +109,19 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../images/Banner.png) no-repeat;
-    background-size: cover; 
+
 }
 
-@media screen and (max-device-width: 800px) {
-    html {
-         background: url(polina.jpg) #000 no-repeat center center fixed;
-    }
+@media screen and (max-width: 900px) {
+    div#home {
+      background:url(../images/Banner.png)no-repeat 0px 0px;
+   background-siez:cover;
+   -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+   min-height:310px;
+}
     #bgvid {
         display: none;
     }
@@ -160,26 +161,26 @@ a.navbar-brand2{
 
 
 .baner-text { /*styling of the way the banner text is positioned and spaced*/
-    margin-top: 3em;
+    margin-top: 4em;
     text-align:center;
 }
 .baner-text h2 { /*styling of the text font, font size, spacing, etc... */
     color: #fff;
-    font-size: 6em;
+    font-size: 5.5em;
     line-height: 1.2em;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
 }
 
 .baner-text2 { /*styling of the way the banner text is positioned and spaced*/
-    margin-top: 18em;
+    margin-top: 13em;
     text-align:center;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
 }
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
     color: #fff;
-    font-size: 6em;
+    font-size: 4.5em;
     line-height: 1.2em;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
@@ -187,14 +188,14 @@ a.navbar-brand2{
 
 
 .comingSoon { /*styling of the way the banner text is positioned and spaced*/
-    margin-top: 18em;
+    margin-top: 16em;
     text-align:center;
 }
 
 
 @media(min-width:600px){
 .comingSoon h2 { /*styling of the text font, font size, spacing, etc... */
-   font-size: 8em;
+   font-size: 6em;
 }
 
 .comingSoon h3 { /*styling of the text font, font size, spacing, etc... */
@@ -339,7 +340,7 @@ h3.title2 {
 
 
 .about p {
-    font-size: 2.2em;
+    font-size: 2em;
     color: #777;
     text-align: justify;
     /*width: 42%;*/
@@ -355,19 +356,11 @@ h3.title2 {
     line-height: 1.8em;
 }
 
-#registration p {
-    font-size: 1.5em;
-    color: #777;
-    text-align: justify;
-    margin: 1em auto;
-    line-height: 1.8em;
-    width:80%;
-}
 
 #theme p {
     font-size: 1.3em;
     color: #777;
-    margin: 1em 0 3em 0;
+    margin: 1em auto 3em ;
     line-height: 1.8em;
 }
 
@@ -475,16 +468,9 @@ font-size: 3em;
     min-height: 275px;
 }
 
-.register-now-link{
-    background: url(../images/Register.png)no-repeat 0px 0px;
-    background-size: cover;
-    display: block;
-    min-height: 275px;
-}
 
-
-.communityService-link{
-    background: url(../images/communityService.png)no-repeat 0px 0px;
+.registration-link{
+    background: url(../images/registerNow.png)no-repeat 0px 0px;
     background-size: cover;
     display: block;
     min-height: 275px;
@@ -515,7 +501,7 @@ font-size: 3em;
 /*--testimonial--*/
 .testimonial {
     background-color: #6FCFD0;
-    min-height:468px;
+    min-height:348px;
     color: #fff;
 }
 
@@ -553,23 +539,101 @@ font-size: 3em;
 
 /*--//Contact--*/
 
+
+/*--Donate*/
+
+/*--//Donate--*/
+
+.donate p {
+    font-size: 1.3em;
+    color: #777;
+    text-align: justify;
+    margin: 0em auto 1em;
+    line-height: 1.8em;
+}
+
+@media (max-width: 480px){
+.donate p{
+  font-size: 1em;
+}
+}
+
+.donate{
+  text-align: center;
+}
+
+.donate h1{
+  padding-top:1em;
+  color:#902939;
+  text-transform: uppercase;
+}
+
+.donate h2{
+  padding-top:1em;
+  text-transform: uppercase;
+}
+
+.donate h3, h4{
+  text-align: left;
+}
+
+.donate ul li{
+  text-align: left;
+}
+
 /*--Registration*/
 
+.registration p {
+    font-size: 1.3em;
+    color: #777;
+    text-align: justify;
+    margin: 0em auto 1em;
+    line-height: 1.8em;
+}
+
+@media (max-width: 480px){
+.registration p{
+  font-size: 1em;
+}
+}
+
 .registration{
-  width:80%;
   text-align: center;
 }
 
 .registration h1{
   padding-top:1em;
-  /*font-size: 4em;*/
   color:#902939;
   text-transform: uppercase;
 }
 
+.registration h2{
+  padding-top:1em;
+  text-transform: uppercase;
+}
+
+.registration h3, h4{
+  text-align: left;
+}
 #registrationbtn{
   font-size:1.5em;
  }
+
+.registration ul li{
+  text-align: left;
+}
+
+.highLightInfo{
+  background-color:#D3D3D3;
+  margin-top:30px;
+  padding-bottom: 30px;
+
+
+}
+
+#conferenceGoal{
+  text-transform: uppercase;
+}
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -928,7 +992,7 @@ h2.resp-accordion {
 .like-grids {
   background-color: #902939;
   margin: 10px 9px;
-  width: 14%;
+  width: 11%;
   border-radius:50%;
 }
 .like-grids a {
@@ -938,8 +1002,8 @@ h2.resp-accordion {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   -moz-border-radius: 50%;
-  height: 100px;
-  padding-top: 25px;
+  height: 68px;
+  padding-top: 20px;
 
 }
 .like-grids p {
@@ -1074,15 +1138,9 @@ h2.resp-accordion {
   margin-right: auto;
 }
 
-.contactDeatails2 img{
-  padding-bottom: 15px;
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .contactInfo div strong{
-  font-size: 2em;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -1092,19 +1150,25 @@ h2.resp-accordion {
   padding-bottom:15px ;
 }
 
+@media(max-width:480px){
+.contactInfo a, address{
+  font-size: .7em;
+}
+}
 
 .contactsRow img {
   width:100%;
 }
+
 .contacts h1 {
   color: #a7a9ac;
-  font-size: 6em;
+  font-size: 4em;
 }
 .contacts h2 {
   display:inline-block;
-  width:80%;
+  width:50%;
   color:#a7a9ac;
-  font-size: 4.5em;
+  font-size: 2em;
   cursor:pointer;
   border: solid 1px #a7a9ac;
   padding: 10px 0;
@@ -1113,17 +1177,22 @@ h2.resp-accordion {
 
 @media(max-width: 767px) {
  .contacts h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
  .contacts h2 {
   display:inline-block;
   width:100%;
-  font-size: 3.5em;
+  font-size: 1.5em;
 }
 
 }
 
+@media(max-width: 480px) {
+ .contacts h1 {
+  font-size: 3em;
+}
 
+}
 .contacts h2:hover {
   background-color: #902939;
 }
@@ -1210,7 +1279,7 @@ h2.resp-accordion {
 }
 
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
-    font-size: 5.5em;   
+    font-size: 4.5em;   
 }
 .baner {
     /*min-height: 580px;*/
@@ -1225,7 +1294,7 @@ h2.resp-accordion {
 }
 
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
-    font-size: 5.5em;   
+    font-size: 4.5em;   
 }
 .baner {
     /*min-height: 650px;*/
@@ -1240,7 +1309,7 @@ h2.resp-accordion {
 }
 
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
-    font-size: 4.6em;   
+    font-size: 4.5em;   
 }
 .logo {
     margin: 6.8em 0 0;
@@ -1270,21 +1339,16 @@ h2.resp-accordion {
     margin-top: 5.3em;
     font-size: 1.8em;
 }
-.news-grids {
-    margin-top: 5em;
-}
-.resp-tab-item {
-    width: 27%;
-}
+
 .like-grids {
-    margin: 0 20px;
-    width: 14%;
+    /*margin: 0 20px;*/
+    /*width: 14%;*/
 }
 
 }
 @media(max-width:1024px){
 .baner-text h2 {
-    font-size: 4.4em;
+    font-size: 4.6em;
 }
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
     font-size: 4.4em;   
@@ -1303,7 +1367,7 @@ h2.resp-accordion {
     font-size: 4.2em;
 }
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
-    font-size: 4.2em;   
+    font-size: 3.4em;   
 }
 .logo {
     margin: 6.8em 0 0;
@@ -1345,54 +1409,18 @@ h3.title {
     font-size: 1.6em;
 }
 
-
-.team-grids {
-    margin: 2em 0 0;
-}
-.news-grids-left {
-    width: 20%;
-    margin-right: 4em;
-}
-.news-grids-left img {
-    width: 100%;
-}
-.news-grids-right {
-    margin-top: 1.5em;
-}
-.news-grids {
-    margin-top: 4em;
-}
-.servc-grids {
-    margin-top: 0;
-}
-.servc-grid {
-    margin-top: 3em;
-}
-.servc-grid-right h4 {
-    font-size: 1.4em;
-}
-.resp-tab-item {
-    margin: 0 .2em;
-}
-.resp-tabs-list {
-    width: 45%;
-	margin: 0 auto 2em;
-}
-.view1.view-first {
-    width: 85%;
-}
 .like-grids {
     margin: 0 10px;
-    width: 14%;
+    width: 11%;
     float: left;
 }
 .like-grids a {
-    width: 90px;
-    height: 90px;
-    padding-top: 23px;
+    /*width: 90px;*/
+    /*height: 90px;*/
+    /*padding-top: 23px;*/
 }
 .like-grids a  img {
-    width: 48%;
+    /*widt0h: 48%;*/
 }
 .map {
     padding: 0 0 3em !important;
@@ -1482,7 +1510,7 @@ button.navbar-toggle {
     display: inline-block;
 }
 .top-nav {
-    padding: 1em 0 0;
+    /*padding: 1em 0 0;*/
 }
 a.navbar-brand {
     padding: 0;
@@ -1584,16 +1612,16 @@ h3.title {
     margin: 0 0 0.5em 0;
 }
 .like-grids a img {
-    width: 35%;
+    /*width: 100%;*/
 }
 .like-grids a {
-    width: 65px;
+    /*width: 65px;*/
     height: 65px;
     padding-top: 19px;
 }
 .like-grids {
-    width: 21%;
-    padding: 20px 10px;
+    /*width: 21%;*/
+    /*padding: 20px 10px;*/
 }
 .like-grids p {
     font-size: 1em;
@@ -1632,7 +1660,7 @@ h3.title {
     font-size: 2.1em;
 }
 .top-nav {
-    padding: 0.8em 0 0;
+    /*padding: 0.8em 0 0;*/
 }
 button.navbar-toggle {
     margin: 0.8em 0.8em 0.8em 0;
@@ -1685,19 +1713,16 @@ h3.title {
 
 .like-info {
     margin-top: 1.5em;
+    margin-top: 1.5em;
 }
 .like-grids a {
-/*    width: 50px;*/
-    height: 50px;
-    padding-top: 14px;
-}
-.like-grids p {
-    font-size: 0.9em;
-    margin-top: 0.8em;
+    /*width: 50px;*/
+    height: 45px;
+    padding-top: 11px;
 }
 .like-grids {
-    padding: 20px 5px;
-    margin: 10px 44px;
+    padding: 0px 0px;
+    margin: 0px 16px;
 }
 .map {
     padding: 0 0 1.5em !important;
@@ -1839,7 +1864,7 @@ h3.title {
     font-size: 1em;
 }
 .like-grids {
-    width: 30%;
+    width: 29%;
     padding: 20px 5px;
     margin: 8px 30px;
 }
