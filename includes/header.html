@@ -3,7 +3,7 @@
 
 
 <head>
-<title><?php echo $page_title; ?></title>
+<title>JesusWalk | <?php echo $page_title; ?></title>
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <link rel="stylesheet" href="css/swipebox.css">
@@ -53,19 +53,19 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right cl-effect-15 nav-margin secondNav">
 						<li class="hello"><a href="index.html" data-hover="Home">HOME</a></li>
-						<li><a href="" class="active" data-hover="About">ABOUT</a></li>					
+						<li><a href="about.php" data-hover="About">ABOUT</a></li>					
 						<li class="dropdown">
-			                <a href="2016.html" class="dropdown-toggle" id="navDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">This Year: 2016<span class="caret"></span></a>
+			                <a href="2016.php" class="dropdown-toggle" id="navDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">This Year: 2016<span class="caret"></span></a>
 			                <ul class="dropdown-menu ">
-			                  <li><a href="2016.html">Theme</a></li>
+			                  <li><a href="2016.php">Theme</a></li>
 			                  <li><a href="comingSoon.html">Speakers</a></li>
 			                  <li><a href="comingSoon.html">Worship</a></li>
 			                </ul>
 			            </li>
-						<li><a href="donate.html" data-hover="DONATE NOW">DONATE NOW</a></li>
-						<li><a href="registration.html" data-hover="REGISTER">REGISTER</a></li>
+						<li><a href="donate.php" data-hover="DONATE NOW">DONATE NOW</a></li>
+						<li><a href="registration.php" data-hover="REGISTER">REGISTER</a></li>
 						<li><a href="comingSoon.html" data-hover="GET INVOLVED">GET INVOLVED</a></li>			
-						<li><a href="contact.html" data-hover="Contact">Contact</a></li>
+						<li><a href="contact.php" data-hover="Contact">Contact</a></li>
 					</ul>	
 					<div class="clearfix"> </div>
 				</div>
@@ -91,10 +91,10 @@
 	<!--navigation-->
 
 <!--baner-->
-	<div class="aboutBaner">
+	<div class="<?php echo $page_banner?>">
 		<div class="container text-center">
 			<div class="baner-text2">
-				<h2>CHALLENGING STUDENTS <br> EXPERIENCING GOD <br> LIVING THE WORD</h2>	
+				<?php echo $page_header?>
 			</div>	
 		</div>
 	</div>
