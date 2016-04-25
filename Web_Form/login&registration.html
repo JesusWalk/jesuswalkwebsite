@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
-<title>JesusWalk | Registration</title>
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="css/swipebox.css">
-<link href='https://fonts.googleapis.com/css?family=Arimo:700,400|Raleway:400,200' rel='stylesheet' type='text/css'>
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //Custom Theme files -->
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script> 
-<script type="text/javascript" src="js/parsley.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<!-- //js -->	
-<!-- start-smoth-scrolling-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
-<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-		
-		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
-</script>
-<!--//end-smoth-scrolling-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Login &amp; Registration </title>
+
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800|Changa+One' rel='stylesheet' type='text/css' >
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="_Scripts/General/jsonserialize.js" type="text/javascript"></script>
+	<script src="_Scripts/General/cookies.js" type="text/javascript"></script>
+	<script src="LoginRegister.js" type="text/javascript"></script>
+
+
+	<script src="script.js">
+
+ 
+	var form = document.getElementById('registration'),
+ 	 agegroup = form.elements.agegroup;
+
+	agegroup.onchange = function() {
+ 	 var form = this.form;
+  	if (this.selectedIndex === 1) {
+   	 form.elements.parentinformation.disabled = true;
+ 		 } else {
+    form.elements.parentinformation.disabled = false;
+  		}
+	};
+	</script>
 
 </head>
 
 <body>
-<form class="demo-form" id="registration" action="#" method="post">
+<form id="ss-form" action="https://docs.google.com/forms/d/1j1mqaj5C9pvjUaD3S8coRNwIjiW6ql2KVBTP3KSJauk/formResponse" method="post">
 
 	<h1>Jesus Walk Registration</h1>
 
-	<fieldset class ="form-section">
+	<fieldset>
 		<legend><span class="number">1</span> Student Information</legend>
 
 		<label for="firstname">First Name:*</label>
-		<input class="form-control" id="firstname" name="firstName" type="text" required/>
+		<input id="firstname" name="entry.1283365487" type="text" required autocomplete="off" />
 
-		<label for="lastname"> Last Name:*</label>
-		<input class="form-control" id="lastname" name="lastName" type="text" required/>
+		 <label for="lastname"> Last Name:*</label>
+		<input id="lastname" name="entry.1846925829" type="text" required autocomplete="off" />
 
 		<label for="grade"> Grade in Fall 2015:*</label>
-			<select class="form-control" name="Grade" id="grade" required>
+			<select name="entry.266610264" id="grade" required>
 				<option disabled selected value=""> --Select a Grade -- </option>
 				<option value="6th">6th Grade</option>
 				<option value="7th">7th Grade</option>
@@ -65,50 +65,50 @@
 			</select>
 
 		<label> Age:*</label>
-		<input class="form-control" type="number" id="age" name="age" min="1" max="100" required>
+		<input type="number" id="age" name="entry.44530057" min="1" max="100" required autocomplete="off">
 
 		<label for="dateofbirth">Date of Birth:*</label>
-		<input class="form-control" type="date" id="dateofbirth" name="dateofbirth" required>
+		<input type="date" id="dateofbirth" name="entry.119610255" required>
 
 		<div class="radioDiv">
 		<label>Sex:*</label>
-		<input class="form-control" type="radio" id="male" name="sex" required><label class="light" for="male">Male</label>
-		<input class="form-control" type="radio" id="female" name="sex"><label class="light" for="male">Female</label>
+		<input type="radio" id="male" name="entry.844317595" required><label class="light" for="male">Male</label>
+		<input type="radio" id="female" name="entry.844317595"><label class="light" for="male">Female</label>
 		</div>
 
 		<label for="phone">Phone Number:*</label>
-		<input class="form-control" id="phone" name="phonenumber" type="tel" required />
+		<input id="phone" name="entry.470842880" type="tel" required autocomplete="off" />
 
 		<label for="email">Email Address:*</label>
-		<input class="form-control" id="email" name="emailaddress" type="email" required/>
+		<input id="email" name="entry.1316231562" type="email" required autocomplete="off" />
 
 		<label for="shirtsize"> Preferred T-Shirt Size:*<br>
-		<p>Shirts are in Adult Sizes | Note: Sizes are not guaranteed<p>
+		Shirts are in Adult Sizes | Note: Sizes are not guaranteed
 		</label>
-			<select class="form-control" name="shirtsize" id="shirtsize" required> <br>
+			<select name="entry.1942447687" id="shirtsize" required> <br>
 				<option disabled selected value=""> --Select a size -- </option>
 				<option value="small">small</option>
 				<option value="medium">medium</option>
 				<option value="large">large</option>
-				<option value="extralarge">extra large</option>
+				<option value="extralarge">extralarge</option>
 			</select>
 
 		<label for="church">Home Church:</label>
-		<input class="form-control" id="church" name="homechurch" type="text" />
+		<input id="church" name="entry.491694775" type="text" autocomplete="off" />
 
 		<label for="pastorname">Pastors Name:</label>
-		<input class="form-control" id="pastorname" name="pastorname" type="text"/>
+		<input id="pastorname" name="entry.1937677530" type="text" autocomplete="off" />
 
 		<label>Social Media</label>
 		<label for="Facebook">Facebook:</label>
-		<input class="form-control" id="Facebook" name="Facebook" type="text"/>
+		<input id="Facebook" name="entry.1462902094" type="text" autocomplete="off" />
 		<label for="Instagram">Instagram:</label>
-		<input class="form-control" id="Instagram" name="Instagram" type="text" />
+		<input id="Instagram" name="entry.1462902094" type="text" autocomplete="off" />
 		<label for="Twitter">Twitter:</label>
-		<input class="form-control" id="Twitter" name="Twitter" type="text"/>	
+		<input id="Twitter" name="entry.1462902094" type="text" autocomplete="off" />	
 
 		<label for="agegroup">Are you under the age of 18?*</label>
-		<select class="form-control" id="agegroup" name="agegroup" >
+		<select id="agegroup" name="entry.1222153949" >
 			<option disabled selected required></option>
 			<option value="yes">Yes</option>
 			<option value="no" >No</option>
@@ -116,20 +116,19 @@
 
 	</fieldset>
 
-
-	<fieldset class ="form-section">
+	<fieldset>
 
 		<legend><span class="number">2</span> Address Infomation</legend>
 
 		<label for="street">Street:*</label>
-		<input class="form-control" id="street" name="street" type="text" required />
+		<input id="entry_721759374" name="entry.721759374" type="text" required autocomplete="off" />
 
 		<label for="City">City:*</label>
-		<input class="form-control" id="City" name="City" type="text" required />
+		<input id="City" name="entry.1417976443" type="text" required autocomplete="off" />
 
 		<label for="State">State:*</label>
-		<input class="form-control" type="text" list="state" required>
-		<datalist id="state" name="state">
+		<input type="text" list="state" required>
+		<datalist id="state" name="entry.1120105248">
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
 				<option value="AZ">Arizona</option>
@@ -184,23 +183,23 @@
 			</datalist>
 
 		<label for="zipcode">Zip Code:*</label>
-		<input class="form-control" id="zipcode" name="zipcode" type="number" required />
+		<input id="zipcode" name="entry.1363392707" type="number" required autocomplete="off" />
 
 	</fieldset>
 
 	
 
-	<fieldset class ="form-section" id="parentinformation">
+	<fieldset id="parentinformation">
 
 		<legend><span class="number">3</span> Parent Infomation</legend>
 		<label for="parentfirstname">Parent First Name:*</label>
-		<input class="form-control" id="parentfirstname" name="parentfirstname" type="text" required/>
+		<input id="parentfirstname" name="entry.388080362" type="text" required autocomplete="off" />
 
 		<label for="parentlastname">Parent Last Name:*</label>
-		<input class="form-control" id="parentlastname" name="parentlastname" type="text" required />
+		<input  id="parentlastname" name="entry.1869698862" type="text" required autocomplete="off" />
 
 		<label for="relationship">Relationship:*</label>
-			<select class="form-control" id="relationship" name="relationship">
+			<select id="relationship" name="entry.861377005">
 				<option disabled selected> Select an option  </option>
 				<option value="mother">Mother</option>
 				<option value="father">Father</option>
@@ -210,13 +209,13 @@
 
 		<label> Address (if different than above)</label>
 		<label for="street2">Street:*</label>
-		<input class="form-control" id="street2" name="street" type="text" required />
+		<input id="street2" name="entry.1008816558" type="text" required autocomplete="off" />
 
 		<label for="City2">City:*</label>
-		<input class="form-control" id="City2" name="City" type="text" required />
+		<input id="City2" name="City" type="text" required autocomplete="off" />
 
 		<label for="State2">State:*</label>
-		<input class="form-control" type="text" list="state" required>
+		<input type="text" list="state" required>
 		<datalist id="state2" name="state">
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
@@ -272,60 +271,41 @@
 			</datalist>
 		
 		<label for="phone2">Cell Phone Number:*</label>
-		<input class="form-control" id="phone2" name="cellPhoneNumber" type="tel" required />
+		<input id="phone2" name="entry.1348926934" type="tel" required autocomplete="off" />
 
 		<label for="parentphone">Home Number:*</label>
-		<input class="form-control" id="parentphone" name="homePhoneNumber" type="tel" required />
+		<input id="parentphone" name="entry.1646118243" type="tel" required autocomplete="off" />
 
 		<label for="email2">Email Address:*</label>
-		<input class="form-control" id="email2" name="parentemailaddress" type="email" required  />
-	</fieldset>
-
-	<fieldset class ="form-section">
-
-		<legend><span class="number">4</span> Registration Cost</legend>
-		<p>Your registration cost will cover the following:</p>
-		<ul>
-		<li>Lodging for the duration of the conference</li>
-		<li>Food/Beverage for the duration of the conference</li>
-		<li>Backpack</li>
-		<li>Water bottle</li>
-		<li>Theme T-Shirt</li>
-		<li>Pen</li>
-		<li>Souvenir Program </li>
-		<li>Access to full conference program</li>
-		</ul>
-
-		<label for="pkgType">Registration Package:*</label>
-		<select class="form-control"id="pkgType" name="pkgType" required>
-				<option disabled selected value=""> --Select an Option -- </option>
-				<option value="individual">Individual</option>
-				<option value="family">Family(+2 Students)</option>
-				<option value="group">Group(+5 Students)</option>
-				<option value="counselor">Counselor</option>
-				<option value="wkspCounselor">Workshop Counselor</option>
-			</select>
-
-	</fieldset>
+		<input id="email2" name="entry.1970887262" type="email" required autocomplete="off" /> 
+	</fieledset>
 
 
-
-  <div class="form-navigation">
-	<button type="button" class="next btn btn-info pull-right">Next &gt;</button>
-    <button type="button" class="previous btn btn-info pull-left">&lt; Previous</button>
-    <button type="submit" class="btn btn-info pull-right" id="#registrationButton">Submit</button>
-    <span class="clearfix"></span>
-  </div>
-
-</form>
+<script>
 
 
-<script src="js/form.js">
+	var form = document.getElementById('registration'),
+ 	 agegroup = form.elements.agegroup;
+
+	agegroup.onchange = function() {
+ 	 var form = this.form;
+  	if (this.selectedIndex === 2) {
+   	 form.elements.parentinformation.disabled = true;
+ 		 } else {
+    form.elements.parentinformation.disabled = false;
+  		}
+	};
 
 </script>
 
 
+</form>
 
+
+</body>
+
+
+	<button  type="submit" method="post">Submit</button>
 </body>
 
 <footer>
