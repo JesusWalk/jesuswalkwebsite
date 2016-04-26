@@ -3,6 +3,18 @@ $(function () {
 
   function navigateTo(index) {
     // Mark the current section with the class 'current'
+
+/*
+    $(document).ready(function () {
+    $('#agegroup').on('change', function () {
+        if (this.value === '0') {
+            $("#parentinformation").show();
+        } else {
+            $("#parentinformation").hide();
+        }
+    });
+});*/
+
     $sections
       .removeClass('current')
       .eq(index)
@@ -36,6 +48,8 @@ $(function () {
   });
   navigateTo(0); // Start at the beginning
 });
+
+
 
 /*
 	var form = document.getElementById('registration'),
