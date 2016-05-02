@@ -3,10 +3,22 @@ $(function () {
 
   function navigateTo(index) {
     // Mark the current section with the class 'current'
-    $sections
-      .removeClass('current')
-      .eq(index)
-        .addClass('current');
+
+/*
+    $(document).ready(function () {
+    $('#agegroup').on('change', function () {
+        if (this.value === '0') {
+            $("#parentinformation").show();
+        } else {
+            $("#parentinformation").hide();
+        }
+    });
+  });*/
+
+  $sections
+  .removeClass('current')
+  .eq(index)
+  .addClass('current');
     // Show only the navigation buttons that make sense for the current section:
     $('.form-navigation .previous').toggle(index > 0);
     var atTheEnd = index >= $sections.length - 1;
@@ -21,13 +33,25 @@ $(function () {
 
   // Previous button is easy, just go back
   $('.form-navigation .previous').click(function() {
-    navigateTo(curIndex() - 1);
+    var counter = 1;
+
+    if((curIndex()==1) && ($("#agegroup option:selected").text()=="No"))
+      counter -= 1
+    
+    navigateTo(curIndex() - counter);
   });
 
   // Next button goes forward iff current block validates
   $('.form-navigation .next').click(function() {
-    if ($('.demo-form').parsley().validate({group: 'block-' + curIndex()}))
-      navigateTo(curIndex() + 1);
+
+    var counter = 1;
+
+    if ($('.demo-form').parsley().validate({group: 'block-' + curIndex()})) {
+      if((curIndex()==1) && ($("#agegroup option:selected").text()=="No"))
+        counter += 1
+
+      navigateTo(curIndex() + counter);
+    }
   });
 
   // Prepare sections by setting the `data-parsley-group` attribute to 'block-0', 'block-1', etc.
@@ -36,6 +60,8 @@ $(function () {
   });
   navigateTo(0); // Start at the beginning
 });
+
+
 
 /*
 	var form = document.getElementById('registration'),

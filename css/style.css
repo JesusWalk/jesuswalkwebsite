@@ -708,7 +708,7 @@ select {
 }
 
 fieldset {
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   border: none;
 }
 
@@ -728,7 +728,7 @@ label.light {
 }
 
 .number {
-  background-color: #ED1C24;
+  background-color: #902939;
   color: #fff;
   height: 30px;
   width: 30px;
@@ -744,12 +744,12 @@ label.light {
 .radioDiv {
     padding-bottom: 25px;
 }
+
 @media screen and (min-width: 480px) {
 
   form {
     max-width: 480px;
   }
-
 
 
 input:disabled {
@@ -761,16 +761,27 @@ input:disabled {
 
 }
 
+.formLogo{
+  background-color: #902939;
+  margin: 0 auto 10px;
+  padding:5px;
+  max-width: 480px;
+}
 .form-section {
-  padding-left: 15px;
-
+/*  padding-left: 15px;
+  padding-right:15px;*/
   display: none;
 }
+
 .form-section.current {
   display: inherit;
 }
+
 .btn-info, .btn-default {
+  height:40px;
+  border-radius:3px;
   margin-top: 10px;
+  margin-bottom:20px;
 }
 
 /*--//Registration-->
