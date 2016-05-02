@@ -728,7 +728,7 @@ label.light {
 }
 
 .number {
-  background-color: #ED1C24;
+  background-color: #902939;
   color: #fff;
   height: 30px;
   width: 30px;
@@ -762,7 +762,7 @@ input:disabled {
 }
 
 .formLogo{
-  background-color: #ED1C24;
+  background-color: #902939;
   margin: 0 auto 10px;
   padding:5px;
   max-width: 480px;

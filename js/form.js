@@ -38,8 +38,15 @@ $(function () {
 
   // Next button goes forward iff current block validates
   $('.form-navigation .next').click(function() {
-    if ($('.demo-form').parsley().validate({group: 'block-' + curIndex()}))
-      navigateTo(curIndex() + 1);
+
+    var counter = 1;
+
+    if ($('.demo-form').parsley().validate({group: 'block-' + curIndex()})) {
+      if((curIndex()==1) && ($("#agegroup option:selected").text()=="No"))
+        counter += 1
+
+      navigateTo(curIndex() + counter);
+    }
   });
 
   // Prepare sections by setting the `data-parsley-group` attribute to 'block-0', 'block-1', etc.
