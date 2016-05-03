@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>jQeury.steps Demos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.steps.css">
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.cookie-1.3.1.js"></script>
+        <script src="js/jquery.steps.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <h1>Wizard Demo</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Basic</a></li>
+                    <li><a href="vertical.html">Vertical</a></li>
+                    <li><a href="tabs.html">Tabs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1>Basic Demo</h1>
+
+            <script>
+                $(function ()
+                {
+                    $("#wizard").steps({
+                        headerTag: "h2",
+                        bodyTag: "section",
+                        transitionEffect: "slideLeft"
+                    });
+                });
+            </script>
+
+            <div id="wizard">
+                  <h2>Student Information</h2>
+                <section>
+                        <label for="firstname">First Name:*</label>
+        <input class="form-control" id="firstname" name="entry.1283365487" type="text" required/>
+
+        <label for="lastname"> Last Name:*</label>
+        <input class="form-control" id="lastname" name="entry.1846925829" type="text" required/>
+
+        <label for="grade"> Grade in Fall 2015:*</label>
+            <select class="form-control" name="entry.266610264" id="grade" required>
+                <option disabled selected value=""> --Select a Grade -- </option>
+                <option value="6th">6th Grade</option>
+                <option value="7th">7th Grade</option>
+                <option value="8th">8th Grade</option>
+                <option value="9th">9th Grade</option>
+                <option value="10th">10th Grade</option>
+                <option value="11th">11th Grade</option>
+                <option value="12th">12th Grade</option>
+                <option value="College Freshman/Sophomore">College Freshman/Sophmore</option>
+                <option value="College Junior/Senior">College Junior/Senior</option>
+                <option value="Post College">Post College</option>
+            </select>
+
+        <label> Age:*</label>
+        <input class="form-control" type="number" id="age" name="entry.44530057" min="1" max="100" required>
+
+        <label for="dateofbirth">Date of Birth:*</label>
+        <input class="form-control" type="date" id="dateofbirth" name="entry.119610255" required>
+
+        <div class="radioDiv">
+        <label>Sex:*</label>
+        <input class="form-control" type="radio" id="male" name="entry.844317595" required><label class="light" for="male">Male</label>
+        <input class="form-control" type="radio" id="female" name="entry.844317595"><label class="light" for="male">Female</label>
+        </div>
+
+        <label for="phone">Phone Number:*</label>
+        <input class="form-control" id="phone" name="entry.470842880" type="tel" required />
+
+        <label for="email">Email Address:*</label>
+        <input class="form-control" id="email" name="entry.1316231562" type="email" required/>
+
+        <label for="shirtsize"> Preferred T-Shirt Size:*<br>
+        <p>Shirts are in Adult Sizes | Note: Sizes are not guaranteed<p>
+        </label>
+            <select class="form-control" name="entry.1942447687" id="shirtsize" required> <br>
+                <option disabled selected value=""> --Select a size -- </option>
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+                <option value="extralarge">extra large</option>
+            </select>
+
+        <label for="church">Home Church:</label>
+        <input class="form-control" id="church" name="entry.491694775" type="text" />
+
+        <label for="pastorname">Pastors Name:</label>
+        <input class="form-control" id="pastorname" name="entry.1937677530" type="text"/>
+
+
+
+        <h2>Social Media</h2>
+        <label for="Facebook">Facebook:</label>
+        <input class="form-control" id="Facebook" name="entry.1462902094" type="text"/>
+        <label for="Instagram">Instagram:</label>
+        <input class="form-control" id="Instagram" name="entry.1462902094" type="text" />
+        <label for="Twitter">Twitter:</label>
+        <input class="form-control" id="Twitter" name="entry.1462902094" type="text"/>  
+
+        <label for="agegroup">Are you under the age of 18?*</label>
+        <select class="form-control" id="agegroup" name="entry.1222153949" >
+            <option disabled selected required></option>
+            <option value="yes">Yes</option>
+            <option value="no" >No</option>
+        </select>
+                </section>
+
+                <h2>Address Information</h2>
+                <section>
+                    <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. 
+                        In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum 
+                        dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. 
+                        In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. 
+                        Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                </section>
+
+                <h2>Parent Information (If Under 18)</h2>
+                <section>
+                    <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, 
+                        pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. 
+                        Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris 
+                        venenatis.</p>
+                </section>
+
+                <h2>Registration Costs &amp; Terms and Agreement</h2>
+                <section>
+                    <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. 
+                        Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. 
+                        Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
