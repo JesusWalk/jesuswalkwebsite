@@ -10,17 +10,19 @@
 		<div class="container get-involved">
 		<br>
 			<p>
-				Thank you for your interest in getting more involved with JesusWalk Youth Conference! We truly appreciate your willingness to help bring amazing things to our students in 2015! See below how you can be more involved with JesusWalk 2015: 
+				Thank you for your interest in getting more involved with JesusWalk Youth Conference! We truly appreciate your willingness to help bring amazing things to our students in 2016! See below how you can be more involved with JesusWalk 2016:
 			</p>
 
 
 
-			<h2>As a Volunteer</h2>
+			<h2>Volunteer Team</h2>
 			<p>
-			There's so much that goes on during the week of JesusWalk, which requires a lot of man power to put it all together. In order to make JesusWalk possible, we need volunteers who are willing to serve throughout the entire conference in various roles. You may apply to volunteer if you are over the age of 18. Below is a form for you to fill out along with a listing of areas JesusWalk will be needing volunteers.
-			</p>
+			There's so much that goes on during the week of JesusWalk, which requires a lot of support to put it all together. In order to make JesusWalk possible, we need volunteers who are willing to serve throughout the entire conference in various roles. You may apply to volunteer if you are over the age of 18. Below is a listing of volunteer descriptions along with a volunteer application for you to fill out. 
 
-			<h2>As a Counselor</h2>
+			</p>
+			<iframe src="https://docs.google.com/forms/d/1luMgq258-Qoh1PcdLwnV5PlydFSwJ5cZczeqO48D1AE/viewform?embedded=true#start=embed" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+			<h2>Counselor</h2>
 			<p>
 			In the current economy, we know money is tight. That’s why we do everything we can to make the 
 

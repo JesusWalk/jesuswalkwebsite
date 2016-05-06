@@ -588,6 +588,8 @@ font-size: 3em;
     text-align: justify;
     margin: 0em auto 1em;
     line-height: 1.8em;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 @media (max-width: 480px){
