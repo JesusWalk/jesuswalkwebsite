@@ -37,7 +37,7 @@
 			<p>
 			The student cost for JesusWalk covers admission for 4 days; three nights lodging, breakfast, lunch and 
 
-			dinner for all 4 days. Also included is the welcome back with all the materials needed for the conference.
+			dinner for all 4 days. Also included is the welcome pack with all the materials needed for the conference.
 
 			<ul>
 

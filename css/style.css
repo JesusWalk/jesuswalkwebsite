@@ -542,8 +542,6 @@ font-size: 3em;
 
 /*--Donate*/
 
-/*--//Donate--*/
-
 .donate p {
     font-size: 1.3em;
     color: #777;
@@ -580,6 +578,7 @@ font-size: 3em;
 .donate ul li{
   text-align: left;
 }
+/*--//Donate--*/
 
 /*--Registration*/
 
@@ -622,6 +621,60 @@ font-size: 3em;
 .registration ul li{
   text-align: left;
 }
+
+/*--//Registration--*/
+
+/*--Get Involved*/
+
+.get-involved p {
+    font-size: 1.3em;
+    color: #777;
+    text-align: justify;
+    margin: 0em auto 1em;
+    line-height: 1.8em;
+}
+
+.get-involved p:first-of-type {
+    font-size: 1.8em;
+    color: #777;
+    text-align: center;
+    margin: 0em auto 1em;
+    line-height: 1.8em;
+}
+
+@media (max-width: 480px){
+.get-involved p{
+  font-size: 1em;
+}
+}
+
+.get-involved{
+  text-align: center;
+}
+
+.get-involved h1{
+  padding-top:2em;
+  color:#902939;
+  text-transform: uppercase;
+}
+
+.get-involved h2{
+  padding-top:1em;
+  text-transform: uppercase;
+}
+
+.get-involved h3, h4{
+  text-align: left;
+}
+#get-involvedbtn{
+  font-size:1.5em;
+ }
+
+.get-involved ul li{
+  text-align: left;
+}
+
+/*--//Get-Involved--*/
 
 .highLightInfo{
   background-color:#D3D3D3;
