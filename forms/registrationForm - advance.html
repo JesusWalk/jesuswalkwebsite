@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>JesusWalk | Registration</title>
+<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="../css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="../css/swipebox.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo:700,400|Raleway:400,200' rel='stylesheet' type='text/css'>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="../js/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="../js/parsley.min.js"></script>
+<script src="../js/modernizr.custom.js"></script>
+<!-- //js -->	
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="formLogo">
+				<h1> <a href="index.html"> <img src="../images/JWFLogoWithDate.png"></a> </h1>
+			</div>
+		</div>
+	</div>	
+
+<form  id="ss-form" class="demo-form" action="https://docs.google.com/forms/d/1j1mqaj5C9pvjUaD3S8coRNwIjiW6ql2KVBTP3KSJauk/formResponse" method="post" autocomplete="on">
+
+	<h1>Jesus Walk Registration</h1>
+
+	<fieldset class ="form-section">
+		<legend><span class="number">1</span> Student Information</legend>
+
+		<label for="firstname">First Name:*</label>
+		<input class="form-control" id="firstname" name="entry.1283365487" type="text" required/>
+
+		<label for="lastname"> Last Name:*</label>
+		<input class="form-control" id="lastname" name="entry.1846925829" type="text" required/>
+
+		<label for="grade"> Grade in Fall 2015:*</label>
+			<select class="form-control" name="entry.266610264" id="grade" required>
+				<option disabled selected value=""> --Select a Grade -- </option>
+				<option value="6th">6th Grade</option>
+				<option value="7th">7th Grade</option>
+				<option value="8th">8th Grade</option>
+				<option value="9th">9th Grade</option>
+				<option value="10th">10th Grade</option>
+				<option value="11th">11th Grade</option>
+				<option value="12th">12th Grade</option>
+				<option value="College Freshman/Sophomore">College Freshman/Sophmore</option>
+				<option value="College Junior/Senior">College Junior/Senior</option>
+				<option value="Post College">Post College</option>
+			</select>
+
+		<label> Age:*</label>
+		<input class="form-control" type="number" id="age" name="entry.44530057" min="1" max="100" required>
+
+		<label for="dateofbirth">Date of Birth:*</label>
+		<input class="form-control" type="date" id="dateofbirth" name="entry.119610255" required>
+
+		<div class="radioDiv">
+		<label>Sex:*</label>
+		<input class="form-control" type="radio" id="male" name="entry.844317595" required><label class="light" for="male">Male</label>
+		<input class="form-control" type="radio" id="female" name="entry.844317595"><label class="light" for="male">Female</label>
+		</div>
+
+		<label for="phone">Phone Number:*</label>
+		<input class="form-control" id="phone" name="entry.470842880" type="tel" required />
+
+		<label for="email">Email Address:*</label>
+		<input class="form-control" id="email" name="entry.1316231562" type="email" required/>
+
+		<label for="shirtsize"> Preferred T-Shirt Size:*<br>
+		<p>Shirts are in Adult Sizes | Note: Sizes are not guaranteed<p>
+		</label>
+			<select class="form-control" name="entry.1942447687" id="shirtsize" required> <br>
+				<option disabled selected value=""> --Select a size -- </option>
+				<option value="small">small</option>
+				<option value="medium">medium</option>
+				<option value="large">large</option>
+				<option value="extralarge">extra large</option>
+			</select>
+
+		<label for="church">Home Church:</label>
+		<input class="form-control" id="church" name="entry.491694775" type="text" />
+
+		<label for="pastorname">Pastors Name:</label>
+		<input class="form-control" id="pastorname" name="entry.1937677530" type="text"/>
+
+
+
+		<h2>Social Media</h2>
+		<label for="Facebook">Facebook:</label>
+		<input class="form-control" id="Facebook" name="entry.1462902094" type="text"/>
+		<label for="Instagram">Instagram:</label>
+		<input class="form-control" id="Instagram" name="entry.1462902094" type="text" />
+		<label for="Twitter">Twitter:</label>
+		<input class="form-control" id="Twitter" name="entry.1462902094" type="text"/>	
+
+		<label for="agegroup">Are you under the age of 18?*</label>
+		<select class="form-control" id="agegroup" name="entry.1222153949" >
+			<option disabled selected required></option>
+			<option value="yes">Yes</option>
+			<option value="no" >No</option>
+		</select>
+
+	</fieldset>
+
+
+	<fieldset class ="form-section">
+
+		<legend><span class="number">2</span> Address Infomation</legend>
+
+		<label for="street">Street:*</label>
+		<input class="form-control" id="street" name="entry.721759374" type="text" required />
+
+		<label for="City">City:*</label>
+		<input class="form-control" id="City" name="entry.1417976443" type="text" required />
+
+		<label for="State">State:*</label>
+		<input class="form-control" type="text" list="state" required>
+		<datalist id="state" name="entry.1120105248">
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District Of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</datalist>
+
+		<label for="zipcode">Zip Code:*</label>
+		<input class="form-control" id="zipcode" name="entry.1363392707" type="number" required />
+
+	</fieldset>
+
+	
+
+	<fieldset class ="form-section" id="parentinformation">
+
+		<legend><span class="number">3</span> Parent Infomation</legend>
+		<label for="parentfirstname">Parent First Name:</label>
+		<input class="form-control" id="parentfirstname" name="entry.388080362" type="text"/>
+
+		<label for="parentlastname">Parent Last Name:</label>
+		<input class="form-control" id="parentlastname" name="entry.1869698862" type="text" />
+
+		<label for="relationship">Relationship:</label>
+			<select class="form-control" id="relationship" name="entry.861377005">
+				<option disabled selected> Select an option  </option>
+				<option value="mother">Mother</option>
+				<option value="father">Father</option>
+				<option value="guardian">Legal Guardian</option>
+				<option value="other">Other</option>
+			</select>
+
+		<label> Address (if different than above)</label>
+		<label for="street2">Street:</label>
+		<input class="form-control" id="street2" name="entry.1008816558" type="text" />
+
+		<label for="City2">City:</label>
+		<input class="form-control" id="City2" name="City" type="text" />
+
+		<label for="State2">State:</label>
+		<input class="form-control" type="text" list="state">
+		<datalist id="state2" name="state">
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District Of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</datalist>
+		
+		<label for="phone2">Cell Phone Number:</label>
+		<input class="form-control" id="phone2" name="entry.1348926934" type="tel" />
+
+		<label for="parentphone">Home Number:</label>
+		<input class="form-control" id="parentphone" name="entry.1646118243" type="tel"/>
+
+		<label for="email2">Email Address:</label>
+		<input class="form-control" id="email2" name="entry.1970887262" type="email"  />
+	</fieldset>
+
+	<fieldset class ="form-section">
+
+		<legend><span class="number">4</span> Registration Cost</legend>
+		<p>Your registration cost will cover the following:</p>
+		<ul>
+		<li>Lodging for the duration of the conference</li>
+		<li>Food/Beverage for the duration of the conference</li>
+		<li>Backpack</li>
+		<li>Water bottle</li>
+		<li>Theme T-Shirt</li>
+		<li>Pen</li>
+		<li>Souvenir Program </li>
+		<li>Access to full conference program</li>
+		</ul>
+
+		<label for="pkgType">Registration Package:*</label>
+		<select class="form-control"id="pkgType" name="pkgType" required>
+				<option disabled selected value=""> --Select an Option -- </option>
+				<option value="individual">Individual</option>
+				<option value="group">Group(+2 Students)</option>
+				<option value="counselor">Counselor</option>
+				<option value="staff">Staff</option>
+			</select>
+
+	</fieldset>
+
+
+
+  <div class="form-navigation">
+	<button type="button" class="next btn btn-block btn-info pull-right">Next &gt;</button>
+    <button type="button" class="previous btn btn-block btn-info pull-left">&lt; Previous</button>
+    <button type="submit" class="btn btn-info btn-block pull-right" id="#registrationButton">Submit</button>
+    <span class="clearfix"></span>
+  </div>
+
+</form>
+
+
+<script src="../js/form.js">
+
+</script>
+
+
+
+</body>
+
+<footer>
+</footer>
+</html>
+
+
+
+
+
+
+
