@@ -32,62 +32,9 @@
 			<h2>This is it: We are Committed</h2>
 			<p>Sometimes it may feel repetitive but being the church is a lifestyle that changes the world one day at a time. We must persevere through it even when it’s tough.  Are you in?</p>
 		</div>
-	</div>
-<!--//about-->
+	</div><!--//about-->
 
-	<!--Contact-->
-	<div class="like">		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<h3 class="title1 ">follow us: jesuswalkyouth</h3>
-				<div class="like-info">
-				<div class="col-md-3 like-grids">
-					<a href="https://www.facebook.com/jesuswalkyouth">
-						<img src="images/icon1.png" alt=""/>
-					</a>
-				</div>
-				<div class="col-md-3 like-grids">
-					<a href="https://www.instagram.com/jesuswalkyouth/">
-						<img src="images/icon3.png" alt=""/>
-					</a>
-				</div>
-				<div class="col-md-3 like-grids">
-					<a href="https://twitter.com/jesuswalk">
-						<img src="images/icon5.png" alt=""/>
-					</a>
-				</div>
-				<div class="col-md-3 like-grids">
-					<a href="https://www.youtube.com/channel/UC8ClHBypqvmXQhC8FcMcf_g">
-						<img src="images/icon2.png" alt=""/>
-					</a>
-				</div>			
-				<div class="clearfix"> </div>
-			</div>
-				</div>
-				<div class="col-md-3">
-					<h3 class="title2">contact us</h3>
-				<div class="contact-right">				
-				<form>
-					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-					<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-
-				</form>
-			</div>
-				</div>
-			<div class="col-md-1 buttonPosition">
-					<button class="btn" type="submit" ><img src="images/submitButton.png" alt=""/></input>
-			</div>
-
-			</div>
-
-		</div>
-	</div>
-
-	<!--//Contact-->
+	
 
 	<!--footer-->
-<?php
-	include('includes/footer.html');
-	?>
+<?php include('includes/footer.html'); ?>
