@@ -9,10 +9,11 @@
 	<div class="registration">
 		<div class="container registration">
 
-			<h1>Registration is now open!</h1>
+			<h1>Get Involved</h1>
 			<p>
-				JesusWalk registration is available online. If you're new to our youth conference, we're sure you may 
-				have questions. Below, we've provided helpful information to guide you through the process. 
+				Thank you for your interest in getting more involved with JesusWalk Youth Conference! We truly appreciate your
+				 willingness to help bring amazing things to our students in 2015! See below how you can be more involved with 
+				 JesusWalk 2015: 
 			</p>
 
 
