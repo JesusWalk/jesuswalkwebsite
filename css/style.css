@@ -592,8 +592,6 @@ font-size: 3em;
     text-align: justify;
     margin: 0em auto 1em;
     line-height: 1.8em;
-    padding-right: 30px;
-    padding-left: 30px;
 }
 
 @media (max-width: 480px){
@@ -649,6 +647,11 @@ font-size: 3em;
     line-height: 1.8em;
 }
 
+
+#volunteer p, #counselor p{
+    font-size:1.5em;
+    padding-bottom:1em;
+}
 @media (max-width: 480px){
 .get-involved p{
   font-size: 1em;
@@ -686,7 +689,7 @@ font-size: 3em;
 .highLightInfo{
   background-color:#D3D3D3;
   margin-top:30px;
-  padding-bottom: 30px;
+  padding: 0 30px 30px;
 
 
 }
