@@ -1,50 +1,55 @@
-	<div class="like">		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<h3 class="title1 ">follow us: jesuswalkyouth</h3>
-				<div class="like-info">
-				<div class="col-sm-6 col-md-3 like-grids">
-					<a href="https://www.facebook.com/jesuswalkyouth">
-						<img src="images/icon1.png" alt=""/>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-3 like-grids">
-					<a href="https://www.instagram.com/jesuswalkyouth/">
-						<img src="images/icon3.png" alt=""/>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-3 like-grids">
-					<a href="https://twitter.com/jesuswalk">
-						<img src="images/icon5.png" alt=""/>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-3 like-grids">
-					<a href="https://www.youtube.com/channel/UC8ClHBypqvmXQhC8FcMcf_g">
-						<img src="images/icon2.png" alt=""/>
-					</a>
-				</div>			
-				<div class="clearfix"> </div>
-			</div>
-				</div>
-				<div class="col-md-3">
-					<h3 class="title2">contact us</h3>
-				<div class="contact-right">				
-				<form>
-					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-					<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-				</form>
-			</div>
-				</div>
-			<div class="col-md-1 buttonPosition">
-					<button class="btn" type="submit" ><img src="images/submitButton.png" alt=""/></input>
-			</div>
-
-			</div>
-
-		</div>
-	</div>
+	<div class="like">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8">
+            <h3 class="title1 ">follow us: jesuswalkyouth</h3>
+            <div class="like-info">
+               <div class="col-sm-6 col-md-3 like-grids">
+                  <a href="https://www.facebook.com/jesuswalkyouth">
+                  <img src="images/icon1.png" alt=""/>
+                  </a>
+               </div>
+               <div class="col-sm-6 col-md-3 like-grids">
+                  <a href="https://www.instagram.com/jesuswalkyouth/">
+                  <img src="images/icon3.png" alt=""/>
+                  </a>
+               </div>
+               <div class="col-sm-6 col-md-3 like-grids">
+                  <a href="https://twitter.com/jesuswalk">
+                  <img src="images/icon5.png" alt=""/>
+                  </a>
+               </div>
+               <div class="col-sm-6 col-md-3 like-grids">
+                  <a href="https://www.youtube.com/channel/UC8ClHBypqvmXQhC8FcMcf_g">
+                  <img src="images/icon2.png" alt=""/>
+                  </a>
+               </div>
+               <div class="clearfix"> </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <h3 class="title2">contact us</h3>
+            <div class="contact-right">
+               <form action="http://services.jesuswalkyouth.com/email" id="contactUs">
+                 <!--  <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                  <input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required=""> -->
+                  <div>
+                  <input type="text" name="Name" value="Name..." required="">
+                  <input type="email" name="Email" value="Email..." required="">
+                  <textarea name="Message" value="Message..." required="">Message...</textarea>
+                  </div>
+                  <div>
+                  <button class="btn" type="submit" ><img src="images/submitButton.png" alt=""/></input>
+                  </div>
+               </form>
+            </div>
+         </div>
+        <!--  <div class="col-md-1 buttonPosition">
+            
+         </div> -->
+      </div>
+   </div>
+</div>
 
 
 	<!--//Contact-->
@@ -60,6 +65,46 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.js"></script>
+    <script>
+
+    	$( "#contactUs" ).submit(function( event ) {
+  		event.preventDefault();
+ 
+  			// Get some values from elements on the page:
+  			var $form = $( this ),
+    		name = $form.find( "input[name='Name']" ).val(),
+    		email = $form.find( "input[name='Email']" ).val(),
+    		url = $form.attr( "action" );
+
+    		var json = {
+    			"name" : name, 
+    			"email" : email};
+
+    		$.ajax({
+    			url: url,
+    			dataType: 'json',
+    			type: 'post',
+    			contentType: 'application/json',
+    			data: json,
+    			processData: false,
+    			success: function(data, textStatus, jQxhr){
+    				console.log("Email successfully sent");
+    			},
+    			error: function(jqXhr, textStatus, errorThrown) {
+    				console.log(errorThrown);
+    			}
+
+    		});
+  			/*// Send the data using post
+  			var posting = $.post( url, { s: term } );
+ 
+  			// Put the results in a div
+  			posting.done(function( data ) {
+    		var content = $( data ).find( "#content" );
+    		$( "#result" ).empty().append( content );
+  			});*/
+		});
+    </script>
 </body>
 
 
