@@ -114,8 +114,8 @@
 
 			id="registrationbtn" target="_blank"><button type="button">
 
-			REGISTER NOW</button></a>
-
+			REGISTER NOW</button></a><br>
+			<a href="forms/docs/jw2016-registration.pdf" target="_blank" style = "font-size: 16px;">Downloadable Form Here</a>
 
 
 			</div>
