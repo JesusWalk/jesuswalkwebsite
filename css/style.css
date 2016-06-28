@@ -1,7 +1,12 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
 body{
 	margin:0;
-	font-family: 'Raleway', sans-serif
-  /*;font-family: 'Roboto-Regular';*/
+	font-family: 'Roboto-Regular';
 }
 @font-face {
     font-family: 'Roboto-Regular';
@@ -24,22 +29,18 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
 	margin:0;
-  font-family: 'Raleway', sans-serif;
 }
-
+ul,label{
+	margin:0;
+	padding:0;
+}
 body a:hover{
 	text-decoration:none;
 }
-
-iframe {
-  margin-bottom: 30px;
-}
-
-
 /*--baner--*/
 .baner {
    background:url(../images/Banner.png)no-repeat 0px 0px;
-   background-siez:cover;
+   background-size:cover;
    -webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -54,83 +55,9 @@ iframe {
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
-   min-height:300px;
+   min-height:610px;
 }
 
-
-.contactBaner {
-   background:url(../images/contactBanner2.png)no-repeat 0px 0px;
-   background-size:cover;
-   -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -ms-background-size:cover;
-   min-height:365px;
-}
-
-.themeBanner {
-   background:url(../images/themeBanner.png)no-repeat 0px 0px;
-   background-size:cover;
-   -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -ms-background-size:cover;
-   min-height:410px;
-}
-
-.donateBanner {
-   background:url(../images/donateBanner.png)no-repeat 0px 0px;
-   background-size:cover;
-   -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -ms-background-size:cover;
-   min-height:410px;
-}
-
-.registerBanner {
-   background:url(../images/registrationBanner.png)no-repeat 0px 0px;
-   background-size:cover;
-   -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -ms-background-size:cover;
-   min-height:410px;
-}
-
-
-/*video test*/
-video#bgvid { 
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    /*min-width: 100%;*/
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-
-}
-
-@media screen and (max-width: 900px) {
-    div#home {
-      background:url(../images/Banner.png)no-repeat 0px 0px;
-   background-siez:cover;
-   -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  -ms-background-size:cover;
-   min-height:310px;
-}
-    #bgvid {
-        display: none;
-    }
-}
-/*!video test*/
 
 
 .logo {
@@ -165,26 +92,26 @@ a.navbar-brand2{
 
 
 .baner-text { /*styling of the way the banner text is positioned and spaced*/
-    margin-top: 4em;
+    margin-top: 3em;
     text-align:center;
 }
 .baner-text h2 { /*styling of the text font, font size, spacing, etc... */
     color: #fff;
-    font-size: 5.5em;
+    font-size: 6em;
     line-height: 1.2em;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
 }
 
 .baner-text2 { /*styling of the way the banner text is positioned and spaced*/
-    margin-top: 13em;
+    margin-top: 18em;
     text-align:center;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
 }
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
     color: #fff;
-    font-size: 4.5em;
+    font-size: 6em;
     line-height: 1.2em;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
@@ -192,14 +119,14 @@ a.navbar-brand2{
 
 
 .comingSoon { /*styling of the way the banner text is positioned and spaced*/
-    margin-top: 16em;
+    margin-top: 18em;
     text-align:center;
 }
 
 
 @media(min-width:600px){
 .comingSoon h2 { /*styling of the text font, font size, spacing, etc... */
-   font-size: 6em;
+   font-size: 8em;
 }
 
 .comingSoon h3 { /*styling of the text font, font size, spacing, etc... */
@@ -238,17 +165,13 @@ a.navbar-brand2{
 
 }
 
-.secondNav{
-  padding-top:17.5px;
-}
-
 nav.navbar.navbar-default {
     background-color: inherit;
     border: none;
     margin: 0;
 }
 .top-nav ul li {
-    margin: 0 1em; /*changed from 2.2 em to fit the newly edited link titles*/
+    margin: 0 2.0em; /*changed from 2.2 em to fit the newly edited link titles*/
 }	
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .top-nav ul li  a.active:before {
     color: #000; /*Color of navbar links when hovering*/
@@ -257,17 +180,9 @@ nav.navbar.navbar-default {
 .top-nav ul li a {
     text-decoration: none;
     letter-spacing: 1px;
-    font-size: .91em;
+    font-size: 1em;
     text-transform: uppercase;
 }
-
-@media(max-width: 991px){
-  .top-nav ul li a {
-    font-size: 0.89em;
-}
-
-}
-
 .top-nav ul li a:hover,
 .top-nav ul li a:focus {
 	outline: none;
@@ -306,12 +221,6 @@ nav.navbar.navbar-default {
     float:left;
     padding-left:5%;
 }
-
-#navDropdown{
-  color:#fff;
-}
-
-
 /*--//top-nav--*/
 
 
@@ -320,11 +229,6 @@ nav.navbar.navbar-default {
 .about,.testimonial ,.gallery,.special, .news, .services,.testimonials, .like ,.contact{
     padding: 3em 0;
 }
-
-.contacts{
-  padding: 1.5em 0;
-}
-
 h3.title1 {
     font-size: 3em;
     text-align: left;
@@ -341,42 +245,24 @@ h3.title2 {
     font-family: 'Arimo', sans-serif;
     font-weight:400;
 }
-
-
 .about p {
-    font-size: 2em;
+    font-size: 2.1em;
     color: #777;
-    text-align: justify;
-    /*width: 42%;*/
+    text-align: center;
+    width: 90%;
     margin: 0 auto;
-    line-height: 1.8em;
+    line-height: 1.3em;
 }
+
 
 #about2 p {
     font-size: 1em;
     color: #777;
-    text-align: justify;
+    text-align: center;
+    width: 80%;
     margin: 3em auto;
     line-height: 1.8em;
 }
-
-
-#theme p {
-    font-size: 1.3em;
-    color: #777;
-    margin: 1em auto 3em ;
-    line-height: 1.8em;
-}
-
-#theme h2{
-    color: #902939;
-    text-transform: uppercase;
-    text-align:center;
-}
-
-
-
-
 .flex-video {
 position: relative;
 padding-top: 25px;
@@ -447,10 +333,6 @@ font-size: 3em;
     letter-spacing: 5px;    
 }
 
-.quickLinks, .quickLinksRow div{
-  padding:0;
-}
-
 .quickLinksRow div a:hover {
     background-color:#fff;
 }
@@ -473,8 +355,8 @@ font-size: 3em;
 }
 
 
-.registration-link{
-    background: url(../images/registerNow.png)no-repeat 0px 0px;
+.communityService-link{
+    background: url(../images/communityService.png)no-repeat 0px 0px;
     background-size: cover;
     display: block;
     min-height: 275px;
@@ -505,7 +387,7 @@ font-size: 3em;
 /*--testimonial--*/
 .testimonial {
     background-color: #6FCFD0;
-    min-height:348px;
+    min-height:468px;
     color: #fff;
 }
 
@@ -513,14 +395,18 @@ font-size: 3em;
     font-family: 'Arimo', sans-serif;
     font-weight: 700;
 }
+blockquote:after { 
+    border:none;
+    content: "\201D";
+    font-weight: bold;
+    font-size:50px;
+    color:#fff;
+    position: center; 
+    bottom: -0.6em;
+    font-family: 'Georgia'; 
 
-#testimonial-icon{
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
+
 /*--//testimonial--*/
 
 
@@ -544,325 +430,6 @@ font-size: 3em;
 /*--//Contact--*/
 
 
-/*--Donate*/
-
-.donate p {
-    font-size: 1.3em;
-    color: #777;
-    text-align: justify;
-    margin: 0em auto 1em;
-    line-height: 1.8em;
-}
-
-@media (max-width: 480px){
-.donate p{
-  font-size: 1em;
-}
-}
-
-.donate{
-  text-align: center;
-}
-
-.donate h1{
-  padding-top:1em;
-  color:#902939;
-  text-transform: uppercase;
-}
-
-.donate h2{
-  padding-top:1em;
-  text-transform: uppercase;
-}
-
-.donate h3, h4{
-  text-align: left;
-}
-
-.donate ul li{
-  text-align: left;
-}
-/*--//Donate--*/
-
-/*--Registration*/
-
-.registration p {
-    font-size: 1.3em;
-    color: #777;
-    text-align: justify;
-    margin: 0em auto 1em;
-    line-height: 1.8em;
-}
-
-@media (max-width: 480px){
-.registration p{
-  font-size: 1em;
-}
-}
-
-.registration{
-  text-align: center;
-}
-
-.registration h1{
-  padding-top:1em;
-  color:#902939;
-  text-transform: uppercase;
-}
-
-.registration h2{
-  padding-top:1em;
-  text-transform: uppercase;
-}
-
-.registration h3, h4{
-  text-align: left;
-}
-#registrationbtn{
-  font-size:1.5em;
- }
-
-.registration ul li{
-  text-align: left;
-}
-
-/*--//Registration--*/
-
-/*--Get Involved*/
-
-.get-involved p {
-    font-size: 1.3em;
-    color: #777;
-    text-align: justify;
-    margin: 0em auto 1em;
-    line-height: 1.8em;
-}
-
-.get-involved p:first-of-type {
-    font-size: 2em;
-    color: #777;
-    text-align: justify;
-    /* width: 42%; */
-    margin: 0 auto;
-    line-height: 1.8em;
-}
-
-
-#volunteer p, #counselor p{
-    font-size:1.5em;
-    padding-bottom:1em;
-}
-@media (max-width: 480px){
-.get-involved p{
-  font-size: 1em;
-}
-}
-
-.get-involved{
-  text-align: center;
-}
-
-.get-involved h1{
-  padding-top:2em;
-  color:#902939;
-  text-transform: uppercase;
-}
-
-.get-involved h2{
-  padding-top:1em;
-  text-transform: uppercase;
-}
-
-.get-involved h3, h4{
-  text-align: left;
-}
-#get-involvedbtn{
-  font-size:1.5em;
- }
-
-.get-involved ul li{
-  text-align: left;
-}
-
-/*--//Get-Involved--*/
-
-.highLightInfo{
-  background-color:#D3D3D3;
-  margin-top:30px;
-  padding: 0 30px 30px;
-
-
-}
-
-#conferenceGoal{
-  text-transform: uppercase;
-}
-
-body {
-  font-family: 'Nunito', sans-serif;
-  color: #384047;
-  background-color:7FCCF7;
-}
-
-.demo-form {
-  margin: 0 auto;
-  padding: 10px 20px;
-  background: #f4f7f8;
-  border-radius: 8px;
-}
-
-h1 {
-  margin: 0 0 30px 0;
-  text-align: center;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-input[type="dateofbirth"],
-textarea,
-select {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 10px;
-  width: 100%;
-  background-color: #e8eeef;
-  color: #000000;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-
-}
-
-select {
-  padding: 6px;
-  height: 32px;
-  border-radius: 2px;
-}
-
-#registrationButton {
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #ED1C24;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #ED1C24;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
-}
-
-fieldset {
-  /*margin-bottom: 30px;*/
-  border: none;
-}
-
-legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-label.light {
-  font-weight: 300;
-  display: inline;
-}
-
-.number {
-  background-color: #902939;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
-}
-
-.radioDiv {
-    padding-bottom: 25px;
-}
-
-@media screen and (min-width: 480px) {
-
-  form {
-    max-width: 480px;
-  }
-
-
-input:disabled {
-    background: #dddddd;
-    color: red;
-}
-
-
-
-}
-
-.formLogo{
-  background-color: #902939;
-  margin: 0 auto 10px;
-  padding:5px;
-  max-width: 480px;
-}
-.form-section {
-/*  padding-left: 15px;
-  padding-right:15px;*/
-  display: none;
-}
-
-.form-section.current {
-  display: inherit;
-}
-
-.btn-info, .btn-default {
-  height:40px;
-  border-radius:3px;
-  margin-top: 10px;
-  margin-bottom:20px;
-}
-.form-navigation{
-  max-width:480px;
-  margin:0 auto;
-}
-#registrationPayment{
-  text-align:center;
-}
-#registrationPayment td{
-  font-weight:bold;
-}
-#registrationPayment select{
-  margin-bottom: 1rem;
-}
-#registrationPayment table{
-  width:100%;
-}
-/*--//Registration-->
 
 
 /*--special--*/
@@ -1081,7 +648,7 @@ h2.resp-accordion {
 .like-grids {
   background-color: #902939;
   margin: 10px 9px;
-  width: 11%;
+  width: 14%;
   border-radius:50%;
 }
 .like-grids a {
@@ -1091,8 +658,8 @@ h2.resp-accordion {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   -moz-border-radius: 50%;
-  height: 68px;
-  padding-top: 20px;
+  height: 100px;
+  padding-top: 25px;
 
 }
 .like-grids p {
@@ -1220,123 +787,6 @@ h2.resp-accordion {
 }
 
 
-.contactDeatails img{
-  display:block;
-  padding: 30px 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.contactInfo div strong{
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-
-.contactInfo div{
-  font-size: 16px;
-  text-align: center;
-  padding-bottom:15px ;
-}
-
-@media(max-width:480px){
-.contactInfo a, address{
-  font-size: .7em;
-}
-}
-
-.contactsRow img {
-  width:100%;
-}
-
-.contacts h1 {
-  color: #a7a9ac;
-  font-size: 4em;
-}
-.contacts h2 {
-  display:inline-block;
-  width:50%;
-  color:#a7a9ac;
-  font-size: 2em;
-  cursor:pointer;
-  border: solid 1px #a7a9ac;
-  padding: 10px 0;
-  margin-bottom: 20px;
-}
-
-@media(max-width: 767px) {
- .contacts h1 {
-  font-size: 4em;
-}
- .contacts h2 {
-  display:inline-block;
-  width:100%;
-  font-size: 1.5em;
-}
-
-}
-
-@media(max-width: 480px) {
- .contacts h1 {
-  font-size: 3em;
-}
-
-}
-.contacts h2:hover {
-  background-color: #902939;
-}
-
-.contacts h2 strong {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.contacts .row {
-  margin-bottom: 2em;
-}
-
-.staffContact div {
-  padding:0;
-  margin-bottom: 1.5em;
-}
-
-.staffContact strong{
-  font-size:18px;
-    color:#a7a9ac;
-    text-transform:uppercase;
-}
-
-.staffContact span{
-    color:#a7a9ac;
-}
-
-
-@media(min-width: 767px) {
-.jennToRight, .zheneeToRight{
-  margin-left: 11.33%;
-}
-
-.rhedoreToRight{
-  margin-left:5%;
-}
-
-.mariToRight{
-  margin-left:3%;
-}
-
-.deniseToRight{
-  margin-left: 7%;
-}
-
-.abbyToRight{
-  margin-left: 3%;
-}
-
-.mikeToRight{
-  margin-left: 4%;
-}
-}
-
 /*--footer--*/
 .footer {
     text-align: center;
@@ -1368,7 +818,7 @@ h2.resp-accordion {
 }
 
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
-    font-size: 4.5em;   
+    font-size: 5.5em;   
 }
 .baner {
     /*min-height: 580px;*/
@@ -1383,13 +833,13 @@ h2.resp-accordion {
 }
 
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
-    font-size: 4.5em;   
+    font-size: 5.5em;   
 }
 .baner {
     /*min-height: 650px;*/
 }
 .top-nav ul li {
-    margin: 0 0.8em;
+    margin: 0 1.0em;
 }
 }
 @media(max-width:1080px){
@@ -1398,7 +848,7 @@ h2.resp-accordion {
 }
 
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
-    font-size: 4.5em;   
+    font-size: 4.6em;   
 }
 .logo {
     margin: 6.8em 0 0;
@@ -1428,16 +878,21 @@ h2.resp-accordion {
     margin-top: 5.3em;
     font-size: 1.8em;
 }
-
+.news-grids {
+    margin-top: 5em;
+}
+.resp-tab-item {
+    width: 27%;
+}
 .like-grids {
-    /*margin: 0 20px;*/
-    /*width: 14%;*/
+    margin: 0 20px;
+    width: 14%;
 }
 
 }
 @media(max-width:1024px){
 .baner-text h2 {
-    font-size: 4.6em;
+    font-size: 4.4em;
 }
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
     font-size: 4.4em;   
@@ -1456,7 +911,7 @@ h2.resp-accordion {
     font-size: 4.2em;
 }
 .baner-text2 h2 { /*styling of the text font, font size, spacing, etc... */
-    font-size: 3.4em;   
+    font-size: 4.2em;   
 }
 .logo {
     margin: 6.8em 0 0;
@@ -1498,18 +953,54 @@ h3.title {
     font-size: 1.6em;
 }
 
+
+.team-grids {
+    margin: 2em 0 0;
+}
+.news-grids-left {
+    width: 20%;
+    margin-right: 4em;
+}
+.news-grids-left img {
+    width: 100%;
+}
+.news-grids-right {
+    margin-top: 1.5em;
+}
+.news-grids {
+    margin-top: 4em;
+}
+.servc-grids {
+    margin-top: 0;
+}
+.servc-grid {
+    margin-top: 3em;
+}
+.servc-grid-right h4 {
+    font-size: 1.4em;
+}
+.resp-tab-item {
+    margin: 0 .2em;
+}
+.resp-tabs-list {
+    width: 45%;
+	margin: 0 auto 2em;
+}
+.view1.view-first {
+    width: 85%;
+}
 .like-grids {
     margin: 0 10px;
-    width: 11%;
+    width: 14%;
     float: left;
 }
 .like-grids a {
-    /*width: 90px;*/
-    /*height: 90px;*/
-    /*padding-top: 23px;*/
+    width: 90px;
+    height: 90px;
+    padding-top: 23px;
 }
 .like-grids a  img {
-    /*widt0h: 48%;*/
+    width: 48%;
 }
 .map {
     padding: 0 0 3em !important;
@@ -1599,7 +1090,7 @@ button.navbar-toggle {
     display: inline-block;
 }
 .top-nav {
-    /*padding: 1em 0 0;*/
+    padding: 1em 0 0;
 }
 a.navbar-brand {
     padding: 0;
@@ -1701,16 +1192,16 @@ h3.title {
     margin: 0 0 0.5em 0;
 }
 .like-grids a img {
-    /*width: 100%;*/
+    width: 35%;
 }
 .like-grids a {
-    /*width: 65px;*/
+    width: 65px;
     height: 65px;
     padding-top: 19px;
 }
 .like-grids {
-    /*width: 21%;*/
-    /*padding: 20px 10px;*/
+    width: 21%;
+    padding: 20px 10px;
 }
 .like-grids p {
     font-size: 1em;
@@ -1749,7 +1240,7 @@ h3.title {
     font-size: 2.1em;
 }
 .top-nav {
-    /*padding: 0.8em 0 0;*/
+    padding: 0.8em 0 0;
 }
 button.navbar-toggle {
     margin: 0.8em 0.8em 0.8em 0;
@@ -1802,16 +1293,19 @@ h3.title {
 
 .like-info {
     margin-top: 1.5em;
-    margin-top: 1.5em;
 }
 .like-grids a {
-    /*width: 50px;*/
-    height: 45px;
-    padding-top: 11px;
+/*    width: 50px;*/
+    height: 50px;
+    padding-top: 14px;
+}
+.like-grids p {
+    font-size: 0.9em;
+    margin-top: 0.8em;
 }
 .like-grids {
-    padding: 0px 0px;
-    margin: 0px 16px;
+    padding: 20px 5px;
+    margin: 0 7px;
 }
 .map {
     padding: 0 0 1.5em !important;
@@ -1953,7 +1447,7 @@ h3.title {
     font-size: 1em;
 }
 .like-grids {
-    width: 29%;
+    width: 30%;
     padding: 20px 5px;
     margin: 8px 30px;
 }
