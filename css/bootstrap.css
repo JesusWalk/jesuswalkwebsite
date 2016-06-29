@@ -2592,10 +2592,10 @@ output {
   color: #555;
 }
 .form-control {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
+  /*display: block;*/
+  /*width: 100%;*/
+  /*height: 34px;*/
+  /*padding: 6px 12px;*/
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
@@ -3225,8 +3225,8 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #fff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #902939;
+  border-color: #902939;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -3235,8 +3235,8 @@ fieldset[disabled] .btn-success.active {
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #fff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+  background-color: #902939;
+  border-color: #902939;
 }
 .btn-info:active,
 .btn-info.active,
