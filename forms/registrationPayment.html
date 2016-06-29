@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>JesusWalk | Registration</title>
+<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="../css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="../css/swipebox.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo:700,400|Raleway:400,200' rel='stylesheet' type='text/css'>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="../js/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="../js/parsley.min.js"></script>
+<script src="../js/modernizr.custom.js"></script>
+<!-- //js -->	
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="formLogo">
+				<h1> <a href="../index.html"> <img src="../images/JWFLogoWithDate.png"></a> </h1>
+			</div>
+		</div>
+	</div>	
+
+<form  id="ss-form" class="demo-form" action="https://docs.google.com/forms/d/1j1mqaj5C9pvjUaD3S8coRNwIjiW6ql2KVBTP3KSJauk/formResponse" method="post" autocomplete="on">
+
+	<h1>Jesus Walk Registration</h1>
+
+	<fieldset class ="form-section">
+
+		<legend> Registration Cost</legend>
+		<p>Your registration cost will cover the following:</p>
+		<ul>
+		<li>Lodging for the duration of the conference</li>
+		<li>Food/Beverage for the duration of the conference</li>
+		<li>Backpack</li>
+		<li>Water bottle</li>
+		<li>Theme T-Shirt</li>
+		<li>Pen</li>
+		<li>Souvenir Program </li>
+		<li>Access to full conference program</li>
+		</ul>
+
+</form>
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="registrationPayment">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="KHTB2GDUHF7GN">
+			<table>
+			<tr><td><input type="hidden" name="on0" value="Select Payment Option ">Select Payment Option</td></tr><tr><td><select name="os0">
+				<option value="Individual">Individual $185.00 USD</option>
+				<option value="For groups of 5 or more">For groups of 5 or more $180.00 USD</option>
+			</select> </td></tr>
+			</table>
+			<input type="hidden" name="currency_code" value="USD">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>			
+
+	</fieldset>
+
+
+
+
+
+
+<script src="../js/form.js">
+
+</script>
+
+
+
+</body>
+
+<footer>
+</footer>
+</html>
+
+
+
+
+
+

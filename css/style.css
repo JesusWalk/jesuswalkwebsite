@@ -846,7 +846,22 @@ input:disabled {
   margin-top: 10px;
   margin-bottom:20px;
 }
-
+.form-navigation{
+  max-width:480px;
+  margin:0 auto;
+}
+#registrationPayment{
+  text-align:center;
+}
+#registrationPayment td{
+  font-weight:bold;
+}
+#registrationPayment select{
+  margin-bottom: 1rem;
+}
+#registrationPayment table{
+  width:100%;
+}
 /*--//Registration-->
 
 
