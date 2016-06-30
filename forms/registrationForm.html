@@ -41,6 +41,16 @@
 				return false;
 			});
 		});*/
+	
+
+		function moveToPayment(){
+		$('#ss-form').one("click", function(){
+			console.log('form-submitted');
+			$('#ss-form').submit();
+			window.open('registrationPayment.html', '_blank');
+			});		 
+		}
+
 	</script>
 </head>
 
@@ -53,7 +63,8 @@
 		</div>
 	</div>	
 
-	<form  id="ss-form" class="demo-form" action="https://docs.google.com/forms/d/1j1mqaj5C9pvjUaD3S8coRNwIjiW6ql2KVBTP3KSJauk/formResponse" method="post" autocomplete="on">
+	<form  id="ss-form" class="demo-form" method="post" action="https://docs.google.com/forms/d/1j1mqaj5C9pvjUaD3S8coRNwIjiW6ql2KVBTP3KSJauk/formResponse" autocomplete="on">
+		
 
 		<h1>Jesus Walk Registration</h1>
 
@@ -324,7 +335,7 @@
 					<option value="staff">Staff</option>
 				</select>
 			</form>
-			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<!-- 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="payPalButton" onclick="moveToPayment()">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="KHTB2GDUHF7GN">
 				<table>
@@ -336,16 +347,15 @@
 			<input type="hidden" name="currency_code" value="USD">
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-		</form>		
-
+		</form>	 -->
+		<button class="btn btn-info btn-block pull-right" id="#registrationButton" onclick="moveToPayment()">Submit</button>
 	</fieldset>
 
 
-
+	
 	<div class="form-navigation">
 		<button type="button" class="next btn btn-block btn-info pull-right">Next &gt;</button>
 		<button type="button" class="previous btn btn-block btn-info pull-left">&lt; Previous</button>
-		<button type="submit" class="btn btn-info btn-block pull-right" id="#registrationButton">Submit</button>
 		<span class="clearfix"></span>
 	</div>
 
