@@ -77,8 +77,8 @@
 			<label for="lastname"> Last Name:*</label>
 			<input class="form-control" id="lastname" name="entry.1846925829" type="text" required/>
 
-			<label for="grade"> Grade in Fall 2016:*</label>
-			<select class="form-control" name="entry.266610264" id="grade" required>
+			<label for="entry_266610264"> Grade in Fall 2016:*</label>
+			<select class="form-control" name="entry.266610264" id="entry_266610264" required>
 				<option disabled selected value=""> --Select a Grade -- </option>
 				<option value="6th">6th Grade</option>
 				<option value="7th">7th Grade</option>
@@ -137,8 +137,8 @@
 				<label for="Twitter">Twitter:</label>
 				<input class="form-control" id="Twitter" name="entry.1462902094" type="text"/>	
 
-				<label for="agegroup">Are you under the age of 18?*</label>
-				<select class="form-control" id="agegroup" name="entry.1222153949" >
+				<label for="entry_1222153949">Are you under the age of 18?*</label>
+				<select class="form-control" id="entry_1222153949" name="entry.1222153949" >
 					<option disabled selected required></option>
 					<option value="yes">Yes</option>
 					<option value="no" >No</option>
@@ -157,9 +157,9 @@
 				<label for="City">City:*</label>
 				<input class="form-control" id="City" name="entry.1417976443" type="text" required />
 
-				<label for="State">State:*</label>
+				<label for="entry_1120105248">State:*</label>
 				<input class="form-control" type="text" list="state" required>
-				<datalist id="state" name="entry.1120105248">
+				<datalist id="entry_1120105248" name="entry.1120105248">
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
@@ -326,13 +326,21 @@
 					<li>Access to full conference program</li>
 				</ul>
 
-				<label for="pkgType">Registration Package:*</label>
-				<select class="form-control"id="pkgType" name="pkgType" required>
+				<label for="entry_758126670">Registration Package:*</label>
+				<select class="form-control" id="entry_758126670" name="entry.758126670" required>
 					<option disabled selected value=""> --Select an Option -- </option>
-					<option value="individual">Individual</option>
-					<option value="group">Group(+2 Students)</option>
-					<option value="counselor">Counselor</option>
-					<option value="staff">Staff</option>
+					<option value="Individual">Individual</option>
+					<option value="Group Rate (2+ Students)">Group Rate (2+ Students)</option>
+					<option value="Counselor">Counselor</option>
+					<option value="Staff">Staff</option>
+				</select>
+
+				<label for="entry_576202077">How would you like to receive your 2016 Information Packet?</label>
+				<p>(This packet includes important information and forms that you will need for the conference)</p>
+				<select class="form-control" id="entry_576202077" name="entry.576202077" required>
+					<option disabled selected value=""> --Select an Option -- </option>
+					<option value="Email">Email</option>
+					<option value="Postal Mail">Postal Mail</option>
 				</select>
 			</form>
 <!-- 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="payPalButton" onclick="moveToPayment()">
