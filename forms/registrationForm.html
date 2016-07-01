@@ -63,7 +63,7 @@
 		</div>
 	</div>	
 
-	<form  id="ss-form" class="demo-form" method="post" action="https://docs.google.com/forms/d/1j1mqaj5C9pvjUaD3S8coRNwIjiW6ql2KVBTP3KSJauk/formResponse" autocomplete="on">
+	<form  id="ss-form" class="demo-form" method="post" action="https://docs.google.com/forms/d/1ciAEax0QAm4N4FufhD6Rr_VC0KpysruhkX6owg9iPc8/formResponse" autocomplete="on">
 		
 
 		<h1>Jesus Walk Registration</h1>
@@ -79,7 +79,7 @@
 
 			<label for="entry_266610264"> Grade in Fall 2016:*</label>
 			<select class="form-control" name="entry.266610264" id="entry_266610264" required>
-				<option disabled selected value=""> --Select a Grade -- </option>
+				<option disabled selected value="234"> --Select a Grade -- </option>
 				<option value="6th">6th Grade</option>
 				<option value="7th">7th Grade</option>
 				<option value="8th">8th Grade</option>
@@ -100,8 +100,8 @@
 
 			<div class="radioDiv">
 				<label>Sex:*</label>
-				<input class="form-control" type="radio" id="male" name="entry.844317595" required><label class="light" for="male">Male</label>
-				<input class="form-control" type="radio" id="female" name="entry.844317595"><label class="light" for="male">Female</label>
+				<input class="form-control" type="radio" id="male" name="entry.844317595" value="male" required><label class="light" for="male">Male</label>
+				<input class="form-control" type="radio" id="female" name="entry.844317595" value="female"><label class="light" for="male">Female</label>
 			</div>
 
 			<label for="phone">Phone Number:*</label>
@@ -157,9 +157,9 @@
 				<label for="City">City:*</label>
 				<input class="form-control" id="City" name="entry.1417976443" type="text" required />
 
-				<label for="entry_1120105248">State:*</label>
+				<label for="entry.1120105248">State:*</label>
 				<input class="form-control" type="text" list="state" required>
-				<datalist id="entry_1120105248" name="entry.1120105248">
+				<datalist id="entry.1120105248" name="entry.1120105248">
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
@@ -328,20 +328,22 @@
 
 				<label for="entry_758126670">Registration Package:*</label>
 				<select class="form-control" id="entry_758126670" name="entry.758126670" required>
-					<option disabled selected value=""> --Select an Option -- </option>
+					<option disabled selected value="123"> --Select an Option -- </option>
 					<option value="Individual">Individual</option>
 					<option value="Group Rate (2+ Students)">Group Rate (2+ Students)</option>
 					<option value="Counselor">Counselor</option>
 					<option value="Staff">Staff</option>
 				</select>
 
-				<label for="entry_576202077">How would you like to receive your 2016 Information Packet?</label>
+				<label for="entry.472123189">How would you like to receive your 2016 Information Packet?</label>
 				<p>(This packet includes important information and forms that you will need for the conference)</p>
 				<select class="form-control" id="entry_576202077" name="entry.576202077" required>
 					<option disabled selected value=""> --Select an Option -- </option>
 					<option value="Email">Email</option>
 					<option value="Postal Mail">Postal Mail</option>
 				</select>
+				<button class="btn btn-info btn-block pull-right" id="#registrationButton" onclick="moveToPayment()">Submit</button>
+			</fieldset>
 			</form>
 <!-- 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="payPalButton" onclick="moveToPayment()">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -356,10 +358,6 @@
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 		</form>	 -->
-		<button class="btn btn-info btn-block pull-right" id="#registrationButton" onclick="moveToPayment()">Submit</button>
-	</fieldset>
-
-
 	
 	<div class="form-navigation">
 		<button type="button" class="next btn btn-block btn-info pull-right">Next &gt;</button>
