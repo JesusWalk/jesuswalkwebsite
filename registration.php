@@ -110,7 +110,7 @@
 
 			<!-- <a href="https://docs.google.com/forms/d/1j1mqaj5C9pvjUaD3S8coRNwIjiW6ql2KVBTP3KSJauk/viewform?embedded=true" -->
 
-			<a href="/forms/registrationForm.html"
+			<a href="forms/registrationForm.html"
 
 			id="registrationbtn" target="_blank"><button type="button">
 
