@@ -41,13 +41,13 @@
 				return false;
 			});
 		});*/
-	
+		
 
 		function moveToPayment(){
-		$('#ss-form').one("click", function(){
-			console.log('form-submitted');
-			$('#ss-form').submit();
-			window.open('registrationPayment.html', '_blank');
+			$('#ss-form').one("click", function(){
+				console.log('form-submitted');
+				$('#ss-form').submit();
+				window.open('registrationPayment.html', '_blank');
 			});		 
 		}
 
@@ -342,7 +342,7 @@
 					<option value="Email">Email</option>
 					<option value="Postal Mail">Postal Mail</option>
 				</select>
-			</form>
+				
 <!-- 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="payPalButton" onclick="moveToPayment()">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="KHTB2GDUHF7GN">
@@ -358,21 +358,21 @@
 		</form>	 -->
 		<button class="btn btn-info btn-block pull-right" id="#registrationButton" onclick="moveToPayment()">Submit</button>
 	</fieldset>
+</form>
 
 
-	
-	<div class="form-navigation">
-		<button type="button" class="next btn btn-block btn-info pull-right">Next &gt;</button>
-		<button type="button" class="previous btn btn-block btn-info pull-left">&lt; Previous</button>
-		<span class="clearfix"></span>
-	</div>
+<div class="form-navigation">
+	<button type="button" class="next btn btn-block btn-info pull-right">Next &gt;</button>
+	<button type="button" class="previous btn btn-block btn-info pull-left">&lt; Previous</button>
+	<span class="clearfix"></span>
+</div>
 
 
 
 
-	<script src="../js/form.js">
+<script src="../js/form.js">
 
-	</script>
+</script>
 
 </body>
 
