@@ -456,8 +456,8 @@ font-size: 3em;
 }
 
 
-.worship-link{
-    background: url(../images/Worship.png)no-repeat 0px 0px;
+.getInvolved-link{
+    background: url(../images/getInvolved.png)no-repeat 0px 0px;
     background-size: cover;
     min-height: 275px;
     display: block;
@@ -499,6 +499,29 @@ font-size: 3em;
     font-weight: 700;
 }
 /*--//Quick Links--*/
+
+/*--Speakers--*/
+.speakers-header{
+  font-size:42px;
+}
+.speaker-container{
+  margin-bottom: 4rem;
+}
+
+#speakers p {
+    font-size: 1em;
+    color: #777;
+    text-align: justify;
+    margin: 1em auto;
+    line-height: 1.8em;
+}
+@media(max-width: 970px) {
+  .speaker-name{
+    text-align: center;
+  }
+}
+
+/*--//Speakers--*/
 
 
 
@@ -651,6 +674,7 @@ font-size: 3em;
 #volunteer p, #counselor p{
     font-size:1.5em;
     padding-bottom:1em;
+    margin:0 1rem;
 }
 @media (max-width: 480px){
 .get-involved p{
@@ -1578,7 +1602,7 @@ h3.title {
 @media(max-width:767px){
 button.navbar-toggle {
     border-color: #000 !important;
-    margin: 1em 1em 0;
+    margin: 2em 1em 0;
     background-color: #123;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -1754,7 +1778,7 @@ h3.title {
     /*padding: 0.8em 0 0;*/
 }
 button.navbar-toggle {
-    margin: 0.8em 0.8em 0.8em 0;
+    margin: 2em 0.8em 0.8em 0;
 }
 nav.navbar.navbar-default {
     min-height: 0;

@@ -24,7 +24,7 @@ include('includes/header.html');
 
 			</div>
 
-			<div class="col-sm-12 col-md-6" id="counselor">
+			<div class="col-sm-12 col-md-6 " id="counselor">
 				<h2>Counselor</h2>
 				<p>
 					Whether it is by taking silly snaps or receiving spiritual guidance, a counselor is a huge part of our conference and what also makes a student’s experience memorable. Plus, who wouldn’t want to spend their summer serving AND having fun?! We are in need for willing individuals to serve alongside us and be an extension of JesusWalk is to our students. You may fill out our interest form below if you fit what we are looking for (please see below). For any other questions or concerns, you may email us at counselorservices@jesuswalkyouth.com. 
