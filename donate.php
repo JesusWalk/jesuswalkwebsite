@@ -6,9 +6,8 @@
 	?>
 
 	<div class="donate">
-		<div class="container donate">
-			<h1></h1>
-			<p>
+		<div class="container">
+			<p class="donate-paragraph">
 				We pray that somehow you have been able to witness the way God has used this conference as a vehicle to deliver the message of the gospel to the youth of today. <br/><br/>
 				Under the continued guidance of the CCMP we strive to expand our programs and bring new offerings to our students. It is our mission to provide an open and safe 
 				refuge for youth to experience God and His Word. We do this through our 4-day dynamic program that includes moving worship, engaging messages, community service,
@@ -28,7 +27,6 @@
 					<!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" style="width: 100%;"> -->
 				</form>
 			</div>
-			<h1></h1>
 		</div>
 	</div>
 

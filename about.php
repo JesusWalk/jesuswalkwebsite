@@ -2,7 +2,7 @@
 <?php
 $page_title = "About page";
 $page_banner="aboutBaner";
-$page_header="<h2>CHALLENGING STUDENTS <br> EXPERIENCING GOD <br> LIVING THE WORD</h2>";
+$page_header="<h2 class='baner-text_header'>CHALLENGING STUDENTS <br> EXPERIENCING GOD <br> LIVING THE WORD</h2>";
 include('includes/header.html');
 ?>
 
