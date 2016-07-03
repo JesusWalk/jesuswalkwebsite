@@ -41,13 +41,13 @@
 				return false;
 			});
 		});*/
-	
+		
 
 		function moveToPayment(){
-		$('#ss-form').one("click", function(){
-			console.log('form-submitted');
-			$('#ss-form').submit();
-			window.open('registrationPayment.html', '_blank');
+			$('#ss-form').one("click", function(){
+				console.log('form-submitted');
+				$('#ss-form').submit();
+				window.open('registrationPayment.html', '_blank');
 			});		 
 		}
 
@@ -63,7 +63,8 @@
 		</div>
 	</div>	
 
-	<form  id="ss-form" class="demo-form" method="post" action="https://docs.google.com/forms/d/1ciAEax0QAm4N4FufhD6Rr_VC0KpysruhkX6owg9iPc8/formResponse" autocomplete="on">
+
+	<form  id="ss-form" class="demo-form" method="post" action="https://docs.google.com/forms/d/1mPPGwJMBzNMPTGCRQcQYohV-DYl_j0p6TTWBb81ECNE/formResponse" autocomplete="on">
 		
 
 		<h1>Jesus Walk Registration</h1>
@@ -72,14 +73,14 @@
 			<legend><span class="number">1</span> Student Information</legend>
 
 			<label for="firstname">First Name:*</label>
-			<input class="form-control" id="firstname" name="entry.1283365487" type="text" required/>
+			<input class="form-control" id="firstname" name="entry.2061741864" type="text" required/>
 
 			<label for="lastname"> Last Name:*</label>
-			<input class="form-control" id="lastname" name="entry.1846925829" type="text" required/>
+			<input class="form-control" id="lastname" name="entry.394291570" type="text" required/>
 
-			<label for="entry_266610264"> Grade in Fall 2016:*</label>
-			<select class="form-control" name="entry.266610264" id="entry_266610264" required>
-				<option disabled selected value="234"> --Select a Grade -- </option>
+			<label for="entry_595057802"> Grade in Fall 2016:*</label>
+			<select class="form-control" name="entry.595057802" id="entry_595057802" required>
+				<option disabled selected value=""> --Select a Grade -- </option>
 				<option value="6th">6th Grade</option>
 				<option value="7th">7th Grade</option>
 				<option value="8th">8th Grade</option>
@@ -93,55 +94,58 @@
 			</select>
 
 			<label> Age:*</label>
-			<input class="form-control" type="number" id="age" name="entry.44530057" min="1" max="100" required>
+			<input class="form-control" type="number" id="age" name="entry.1303760208" min="1" max="100" required>
 
 			<label for="dateofbirth">Date of Birth:*</label>
-			<input class="form-control" type="date" id="dateofbirth" name="entry.119610255" required>
+			<input class="form-control" type="date" id="dateofbirth" name="entry.1804702111" required>
 
 			<div class="radioDiv">
 				<label>Sex:*</label>
-				<input class="form-control" type="radio" id="male" name="entry.844317595" value="male" required><label class="light" for="male">Male</label>
-				<input class="form-control" type="radio" id="female" name="entry.844317595" value="female"><label class="light" for="male">Female</label>
+				<input class="form-control" type="radio" value="Male" id="male" name="entry.1167267472" required><label class="light" for="male">Male</label>
+				<input class="form-control" type="radio" value="Female" id="female" name="entry.1167267472" required><label class="light" for="male">Female</label>
 			</div>
 
-			<label for="phone">Phone Number:*</label>
-			<input class="form-control" id="phone" name="entry.470842880" type="tel" required />
+			<label for="cellphone">Cell Phone Number:*</label>
+			<input class="form-control" id="cellphone" name="entry.128898249" type="tel" required />
+
+			<label for="homephone">Home Phone Number:*</label>
+			<input class="form-control" id="homephone" name="entry.556638377" type="tel" required />
 
 			<label for="email">Email Address:*</label>
-			<input class="form-control" id="email" name="entry.1316231562" type="email" required/>
+			<input class="form-control" id="email" name="entry.4436484" type="email" required/>
 
 			<label for="shirtsize"> Preferred T-Shirt Size:*<br>
 				<p>Shirts are in Adult Sizes | Note: Sizes are not guaranteed<p>
 				</label>
-				<select class="form-control" name="entry.1942447687" id="shirtsize" required> <br>
+				<select class="form-control" name="entry.516909657" id="shirtsize" required> <br>
 					<option disabled selected value=""> --Select a size -- </option>
-					<option value="small">small</option>
-					<option value="medium">medium</option>
-					<option value="large">large</option>
-					<option value="extralarge">extra large</option>
+					<option value="Small">small</option>
+					<option value="Medium">medium</option>
+					<option value="Large">large</option>
+					<option value="Extra Large">extra large</option>
 				</select>
 
 				<label for="church">Home Church:</label>
-				<input class="form-control" id="church" name="entry.491694775" type="text" />
+				<input class="form-control" id="church" name="entry.1793304295" type="text" />
 
 				<label for="pastorname">Pastors Name:</label>
-				<input class="form-control" id="pastorname" name="entry.1937677530" type="text"/>
+				<input class="form-control" id="pastorname" name="entry.662485604" type="text"/>
 
 
 
 				<h2>Social Media</h2>
 				<label for="Facebook">Facebook:</label>
-				<input class="form-control" id="Facebook" name="entry.1462902094" type="text"/>
+				<input class="form-control" id="Facebook" name="entry.1566432753" type="text"/>
 				<label for="Instagram">Instagram:</label>
-				<input class="form-control" id="Instagram" name="entry.1462902094" type="text" />
+				<input class="form-control" id="Instagram" name="entry.1566432753" type="text" />
 				<label for="Twitter">Twitter:</label>
-				<input class="form-control" id="Twitter" name="entry.1462902094" type="text"/>	
+				<input class="form-control" id="Twitter" name="entry.1566432753" type="text"/>	
 
 				<label for="entry_1222153949">Are you under the age of 18?*</label>
-				<select class="form-control" id="entry_1222153949" name="entry.1222153949" >
+				<select class="form-control" id="entry_306404425" name="entry.306404425" >
 					<option disabled selected required></option>
-					<option value="yes">Yes</option>
-					<option value="no" >No</option>
+					<option value="Yes">Yes</option>
+					<option value="No" >No</option>
 				</select>
 
 			</fieldset>
@@ -152,19 +156,19 @@
 				<legend><span class="number">2</span> Address Infomation</legend>
 
 				<label for="street">Street:*</label>
-				<input class="form-control" id="street" name="entry.721759374" type="text" required />
+				<input class="form-control" id="street" name="entry.952645682" type="text" required />
 
 				<label for="City">City:*</label>
-				<input class="form-control" id="City" name="entry.1417976443" type="text" required />
+				<input class="form-control" id="City" name="entry.39363931" type="text" required />
 
-				<label for="entry.1120105248">State:*</label>
-				<input class="form-control" type="text" list="state" required>
-				<datalist id="entry.1120105248" name="entry.1120105248">
+				<label for="entry_128970768">State:*</label>
+				<!-- <input class="form-control" name="entry.128970768" type="text" list="state" required> -->
+				<select id="entry_128970768" name="entry.128970768">
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
 					<option value="AR">Arkansas</option>
-					<option value="CA">California</option>
+					<option value="CA" selected="selected">California</option>
 					<option value="CO">Colorado</option>
 					<option value="CT">Connecticut</option>
 					<option value="DE">Delaware</option>
@@ -211,10 +215,10 @@
 					<option value="WV">West Virginia</option>
 					<option value="WI">Wisconsin</option>
 					<option value="WY">Wyoming</option>
-				</datalist>
+				</select>
 
 				<label for="zipcode">Zip Code:*</label>
-				<input class="form-control" id="zipcode" name="entry.1363392707" type="number" required />
+				<input class="form-control" id="zipcode" name="entry.321440589" type="number" required />
 
 			</fieldset>
 
@@ -224,13 +228,13 @@
 
 				<legend><span class="number">3</span> Parent Infomation</legend>
 				<label for="parentfirstname">Parent First Name:</label>
-				<input class="form-control" id="parentfirstname" name="entry.388080362" type="text"/>
+				<input class="form-control" id="parentfirstname" name="entry.505947581" type="text"/>
 
 				<label for="parentlastname">Parent Last Name:</label>
-				<input class="form-control" id="parentlastname" name="entry.1869698862" type="text" />
+				<input class="form-control" id="parentlastname" name="entry.121540572" type="text" />
 
 				<label for="relationship">Relationship:</label>
-				<select class="form-control" id="relationship" name="entry.861377005">
+				<select class="form-control" id="relationship" name="entry.680391386">
 					<option disabled selected> Select an option  </option>
 					<option value="mother">Mother</option>
 					<option value="father">Father</option>
@@ -238,11 +242,10 @@
 					<option value="other">Other</option>
 				</select>
 
-				<label> Address (if different than above)</label>
-				<label for="street2">Street:</label>
-				<input class="form-control" id="street2" name="entry.1008816558" type="text" />
+				<label> Address (if different than above):</label>
+				<input class="form-control" id="address2" name="entry.1692027819" type="text" />
 
-				<label for="City2">City:</label>
+				<!-- <label for="City2">City:</label>
 				<input class="form-control" id="City2" name="City" type="text" />
 
 				<label for="State2">State:</label>
@@ -299,16 +302,16 @@
 					<option value="WV">West Virginia</option>
 					<option value="WI">Wisconsin</option>
 					<option value="WY">Wyoming</option>
-				</datalist>
+				</datalist> -->
 
 				<label for="phone2">Cell Phone Number:</label>
-				<input class="form-control" id="phone2" name="entry.1348926934" type="tel" />
+				<input class="form-control" id="phone2" name="entry.899834251" type="tel" />
 
 				<label for="parentphone">Home Number:</label>
-				<input class="form-control" id="parentphone" name="entry.1646118243" type="tel"/>
+				<input class="form-control" id="parentphone" name="entry.548824772" type="tel"/>
 
 				<label for="email2">Email Address:</label>
-				<input class="form-control" id="email2" name="entry.1970887262" type="email"  />
+				<input class="form-control" id="email2" name="entry.1940894312" type="email"  />
 			</fieldset>
 
 			<fieldset class ="form-section">
@@ -327,24 +330,22 @@
 				</ul>
 
 				<label for="entry_758126670">Registration Package:*</label>
-				<select class="form-control" id="entry_758126670" name="entry.758126670" required>
-					<option disabled selected value="123"> --Select an Option -- </option>
+				<select class="form-control" id="entry_758126670" name="entry.1647251647" required>
+					<option disabled selected value=""> --Select an Option -- </option>
 					<option value="Individual">Individual</option>
 					<option value="Group Rate (2+ Students)">Group Rate (2+ Students)</option>
 					<option value="Counselor">Counselor</option>
 					<option value="Staff">Staff</option>
 				</select>
 
-				<label for="entry.472123189">How would you like to receive your 2016 Information Packet?</label>
+				<label for="entry_576202077">How would you like to receive your 2016 Information Packet?</label>
 				<p>(This packet includes important information and forms that you will need for the conference)</p>
-				<select class="form-control" id="entry_576202077" name="entry.576202077" required>
+				<select class="form-control" id="entry_1643094517" name="entry.1643094517" required>
 					<option disabled selected value=""> --Select an Option -- </option>
 					<option value="Email">Email</option>
 					<option value="Postal Mail">Postal Mail</option>
 				</select>
-				<button class="btn btn-info btn-block pull-right" id="#registrationButton" onclick="moveToPayment()">Submit</button>
-			</fieldset>
-			</form>
+				
 <!-- 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="payPalButton" onclick="moveToPayment()">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="KHTB2GDUHF7GN">
@@ -358,26 +359,29 @@
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 		</form>	 -->
-	
-	<div class="form-navigation">
-		<button type="button" class="next btn btn-block btn-info pull-right">Next &gt;</button>
-		<button type="button" class="previous btn btn-block btn-info pull-left">&lt; Previous</button>
-		<span class="clearfix"></span>
-	</div>
+		<button class="btn btn-info btn-block pull-right" id="#registrationButton" onclick="moveToPayment()">Submit</button>
+	</fieldset>
+</form>
+
+
+<div class="form-navigation">
+	<button type="button" class="next btn btn-block btn-info pull-right">Next &gt;</button>
+	<button type="button" class="previous btn btn-block btn-info pull-left">&lt; Previous</button>
+	<span class="clearfix"></span>
+</div>
 
 
 
 
-	<script src="../js/form.js">
+<script src="../js/form.js">
 
-	</script>
+</script>
 
 </body>
 
 <footer>
 </footer>
 </html>
-
 
 
 
