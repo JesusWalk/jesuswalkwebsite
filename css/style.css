@@ -40,40 +40,63 @@ iframe {
 .baner {
    background:url(../images/Banner.png)no-repeat 0px 0px;
    min-height:610px;
-}
-
-.aboutBaner {
-   background:url(../images/aboutBanner.png)no-repeat 0px 0px;
-   min-height:300px;
-}
-
-.contactBaner {
-   background:url(../images/contactBanner2.png)no-repeat 0px 0px;
-   min-height:365px;
-}
-
-.themeBanner {
-   background:url(../images/themeBanner.png)no-repeat 0px 0px;
-   min-height:410px;
-}
-
-.donateBanner {
-   background:url(../images/donateBanner.png)no-repeat 0px 0px;
-   min-height:410px;
-}
-
-.registerBanner {
-   background:url(../images/registrationBanner.png)no-repeat 0px 0px;
-   min-height:410px;
-}
-
-.banner-size{
    background-size:cover;
    -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
   -ms-background-size:cover;
 }
+
+.aboutBaner {
+   background:url(../images/aboutBanner.png)no-repeat 0px 0px;
+   min-height:300px;
+   background-size:cover;
+   -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+}
+
+.contactBaner {
+   background:url(../images/contactBanner2.png)no-repeat 0px 0px;
+   min-height:365px;
+   background-size:cover;
+   -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+}
+
+.themeBanner {
+   background:url(../images/themeBanner.png)no-repeat 0px 0px;
+   min-height:410px;
+   background-size:cover;
+   -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+}
+
+.donateBanner {
+   background:url(../images/donateBanner.png)no-repeat 0px 0px;
+   min-height:410px;
+   background-size:cover;
+   -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+}
+
+.registerBanner {
+   background:url(../images/registrationBanner.png)no-repeat 0px 0px;
+   min-height:410px;
+   background-size:cover;
+   -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+}
+
 /*video*/
 video#bgvid { 
     position: absolute;
@@ -323,9 +346,6 @@ h3.title2 {
     text-align:center;
 }
 
-
-
-
 .flex-video {
 position: relative;
 padding-top: 25px;
@@ -350,6 +370,24 @@ height: 100%;
 .flex-video { padding-top: 0; }
 }
 /*--//about--*/
+
+/*--Packet--*/
+.homeAbout{
+  margin-bottom:1rem;
+}
+.downloadLink{
+  padding-top:2rem;
+  border-top: 1px solid #ccc;
+  font-style: italic;   
+}
+.infoPacketLink{
+  text-align: center;
+  color: #902939; 
+}
+.infoPacketLink:hover{
+  text-decoration: underline;
+}
+/*--//Packet--*/
 
 /*Contact Page*/
 
@@ -405,20 +443,22 @@ height: 100%;
 }
 
 .link-container{
-    background-size: cover;
     min-height: 275px;
     display: block;
 }
 .getInvolved-link{
     background: url(../images/getInvolved.png)no-repeat 0px 0px;
+    background-size: cover;   
 }
 
 .speakers-link{
     background: url(../images/Speakers.png)no-repeat 0px 0px;
+    background-size: cover;
 }
 
 .registration-link{
     background: url(../images/registerNow.png)no-repeat 0px 0px;
+    background-size: cover;
 }
 
 .link-text{
@@ -1382,7 +1422,7 @@ h3.title {
 @media(max-width:767px){
 button.navbar-toggle {
     border-color: #000 !important;
-    margin: 2em 1em 0;
+    margin: 1.5em 1em 0;
     background-color: #123;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
