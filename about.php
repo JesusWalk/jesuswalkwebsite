@@ -2,7 +2,7 @@
 <?php
 $page_title = "About page";
 $page_banner="aboutBaner";
-$page_header="<h2>CHALLENGING STUDENTS <br> EXPERIENCING GOD <br> LIVING THE WORD</h2>";
+$page_header="<h2 class='baner-text_header'>CHALLENGING STUDENTS <br> EXPERIENCING GOD <br> LIVING THE WORD</h2>";
 include('includes/header.html');
 ?>
 
@@ -14,10 +14,9 @@ include('includes/header.html');
 
 		<div class="row">
 			<!-- YOUTUBE VIDEO RESPONSIVE-->
-			<div class=" col-lg-6 block-center">
+			<div class=" col-lg-offset-3 col-lg-6 block-center">
 				<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-					<iframe width="200" height="200"allowfullscreen="" src="https://www.youtube.com/embed/VNZTq9vq5kk" frameborder="0">
-					</iframe>
+					<iframe width="200" height="200" src="https://www.youtube.com/embed/xD5oTPSkr-k" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
