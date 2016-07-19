@@ -576,9 +576,8 @@ height: 100%;
     color: #777;
     text-align: justify;
     margin: 0em auto 1em;
-    line-height: 1.8em;
+    line-height: 2rem;
 }
-
 @media (max-width: 480px){
 .registration p{
   font-size: 1em;
@@ -606,7 +605,10 @@ height: 100%;
 #registrationbtn{
   font-size:1.5em;
  }
-
+.cancellation, h3.cancellation{
+  text-align: center!important;
+  margin-top:4rem;
+}
 .registration ul li{
   text-align: left;
 }

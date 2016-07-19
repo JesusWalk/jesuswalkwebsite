@@ -117,6 +117,13 @@
 			REGISTER NOW</button></a><br>
 			<a href="forms/docs/jw2016-registration.pdf" target="_blank" style = "font-size: 16px;">Downloadable Form Here</a>
 
+			<h3 class="cancellation">Cancellation Policy</h3>
+			<p>A full refund is only considered if a student has to miss JesusWalk for one of the following reasons: extreme medical emergency, jury duty, military call to duty, or a death in the immediate family, defined as parents, siblings and grandparents.  Reasons beyond these unfortunately will not qualify for refund consideration. A request for consideration of a refund of monies paid must be submitted by July 6, 2016, (two weeks prior to the conference start date.) 
+			Refunds are not guaranteed and will be left up to the discretion of the JesusWalk Finance Committee.
+			<br/><br/>If a refund is approved, it is payable in the same way the initial payment was received. Credit Card accounts are credited the refund amount; checks are sent to those who paid by check.
+			<br/><br/> Refunds are no longer transferable to other JesusWalk registrants.
+			<br/><br/>For questions and concerns, please contact the JesusWalk Finance Committee via email (<a href="mailto:info@jesuswalkyouth.com">info@jesuswalkyouth.com</a>) or phone (<a href="tel:6572345992"> 657.234.5992 </a>). 
+			</p>
 
 			</div>
 
